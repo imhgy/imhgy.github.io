@@ -1,0 +1,20 @@
+# main links links
+main:
+  - title: "About Me"
+    url: "/#Hello"
+
+  - title: "Research Interests"
+    url: "/#-research-interests"
+
+  - title: "News"
+    url: "/#-news"
+
+  - title: "Publications"
+    url: "/#-publications--preprints"
+
+  - title: "Databases"
+    url: "/#code"
+
+  - title: "Awards"
+    url: "/#-honors-and-awards"
+

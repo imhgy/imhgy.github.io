@@ -1,0 +1,107 @@
+- id: grounding-emotion-recognition
+  title: "Grounding Emotion Recognition with Visual Prototypes: VEGA - Revisiting CLIP in MERC."
+  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, Xinyu Yang"
+  venue: ACM MM 2025
+  url: http://www.guanyuhu.com/
+
+- id: beyond-prompts-vega
+  title: "Beyond Prompts: Visual Prototype Quantization for Text-Free Affective Understanding."
+  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, Xinyu Yang"
+  venue: AAAI 2026 (Under Review)
+  url: http://www.guanyuhu.com/
+
+- id: fair-domain-generalization
+  title: "Fair Domain Generalization: An Information-Theoretic View."
+  authors: "Lian Tangzheng, <span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, Xinyu Yang, and Oya Celiktutan"
+  venue: AAAI 2026 (Under Review)
+  url: https://www.arxiv.org/abs/2507.05823
+
+- id: cognitive-priors-multitask
+  title: "From Cognitive Priors to Instance Semantics: A Unified Framework for Multi-task Affective Computing."
+  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, and Xinyu Yang"
+  venue: WACV 2026 (Under Review)
+  url: http://www.guanyuhu.com/
+
+- id: fairness-protocol-tbiom
+  title: "Rethinking Affect Analysis: A Protocol for Ensuring Fairness and Consistency."
+  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, E. Papadopoulou, P. Tzouveli, Jie Wei, and Xinyu Yang"
+  venue: IEEE TBIOM 2025
+  url: https://ieeexplore.ieee.org/document/10919136
+
+- id: emotions-to-violence-abaw9
+  title: "From Emotions to Violence: Multimodal Fine-Grained Behavior Analysis at 9th ABAW."
+  authors: "Dimitrios Kollias, Stefanos Zafeiriou, Irene Kotsia, ..., <span class=\"highlight\">Guanyu Hu</span>"
+  venue: ICCV 2025
+  url: https://affective-behavior-analysis-in-the-wild.github.io/9th/
+
+- id: affective-causal-discovery
+  title: "Human-Aligned Affective Causal Discovery in Facial Behavior."
+  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, and Xinyu Yang"
+  venue: NeurIPS 2025 (Under Review)
+  url: http://www.guanyuhu.com/
+
+- id: demographically-aware-benchmark
+  title: "A Demographically-Aware Benchmarking Framework for Affective Analysis."
+  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, and Xinyu Yang"
+  venue: IEEE TAFFC 2025 (Under Review)
+  url: http://www.guanyuhu.com/
+
+- id: unified-affective-mtl
+  title: "Toward Unified Affective Multitask Learning via Cross-Task Distillation and Semantically-Informed Prompting."
+  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, and Xinyu Yang"
+  venue: IEEE TIP 2025 (Under Review)
+  url: http://www.guanyuhu.com/
+
+- id: abaw8-workshop
+  title: "Advancements in Affective and Behavior Analysis: The 8th ABAW Workshop and Competition."
+  authors: "D. Kollias, P. Tzirakis, A. Cowen, S. Zafeiriou, ..., <span class=\"highlight\">Guanyu Hu</span>, ...."
+  venue: CVPR 2025
+  url: https://affective-behavior-analysis-in-the-wild.github.io/8th/
+
+- id: bridging-fair-affect
+  title: "Bridging the Gap: Protocol Towards Fair and Consistent Affect Analysis."
+  authors: "<span class=\"highlight\">Guanyu Hu</span>, Eleni Papadopoulou, Dimitrios Kollias, Paraskevi Tzouveli, Jie Wei, Xinyu Yang"
+  venue: CVPR 2025
+  url: https://ieeexplore.ieee.org/document/10582033
+
+- id: robust-reaction-generation
+  title: "Robust Facial Reactions Generation: An Emotion-Aware Framework with Modality Compensation."
+  authors: "<span class=\"highlight\">Guanyu Hu</span>, Jie Wei, Siyang Song, Dimitrios Kollias, Xinyu Yang, Zhonglin Sun, O. Kaloidas"
+  venue: IEEE IJCB 2024
+  url: https://ieeexplore.ieee.org/document/10744499
+
+- id: recruitment
+  title: "Artificial intelligence for optimizing recruitment and retention in clinical trials: a scoping review."
+  authors: "Xiaoran Lu, Chen Yang, Lu Liang, Guanyu Hu, Ziyi Zhong, Zihao Jiang"
+  venue: Journal of the American Medical Informatics Association (JAMIA) 2024
+  url: https://journals.aai.org/jamia/article/31/11/2749/7755392
+
+- id: video-emotion-facial-body
+  title: "Learning Facial Expression and Body Gesture Visual Information for Video Emotion Recognition."
+  authors: "Wei Jie, <span class=\"highlight\">Guanyu Hu</span>, Xinyu Yang, Anh Tuan Luu, and Yuzhuo Dong"
+  venue: Expert Systems with Applications (ESA) 2024
+  url: https://www.sciencedirect.com/science/article/abs/pii/S0957417423019218
+
+- id: abaw7-competition
+  title: "7th ABAW Competition: Multi-task Learning and Compound Expression Recognition."
+  authors: "Dimitrios Kollias, Stefanos Zafeiriou, I. Kotsia, A. Dhall, S. Ghosh, C. Shao, <span class=\"highlight\">Guanyu Hu</span>"
+  venue: ECCV 2024
+  url: https://affective-behavior-analysis-in-the-wild.github.io/7th/
+
+- id: abaw6-competition
+  title: "The 6th Affective Behavior Analysis In-the-wild (ABAW) Competition."
+  authors: "Dimitrios Kollias, P, Tzirakis, A, Cowen, S, Zafeiriou, ..., <span class=\"highlight\">Guanyu Hu</span>"
+  venue: CVPR 2024
+  url: https://affective-behavior-analysis-in-the-wild.github.io/6th/
+
+- id: msrf-graph-emotion
+  title: "Multi-scale Receptive Field Graph Model for Emotion Recognition in Conversations."
+  authors: "Wei Jie, <span class=\"highlight\">Guanyu Hu</span>, Luu Anh Tuan, Xinyu Yang, and Wenjing Zhu"
+  venue: ICASSP 2023
+  url: https://ieeexplore.ieee.org/document/10094596
+
+- id: avda-feature-fusion
+  title: "Audio-Visual Domain Adaptation Feature Fusion for Speech Emotion Recognition."
+  authors: "Wei Jie, <span class=\"highlight\">Guanyu Hu</span>, Xinyu Yang, Anh Tuan Luu, and Yizhuo Dong"
+  venue: INTERSPEECH 2022
+  url: https://www.isca-archive.org/interspeech_2022/wei22b_interspeech.html
