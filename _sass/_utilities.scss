@@ -663,11 +663,17 @@ a {
   margin-left: 10px;
   width: 95%;
   border-radius: 12px;
-  padding: 1rem 2rem 0.6rem 2rem;
+  padding: 1rem 1rem 0.6rem 0.5rem;
   margin-bottom: 1rem;
   background: #f9f9fc;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   transition: all 0.2s ease;
+
+  @include breakpoint($large) {
+    padding: 1rem 1rem 0.6rem 1rem;
+  }
+
+
 }
 
 .awards-section h2 {
