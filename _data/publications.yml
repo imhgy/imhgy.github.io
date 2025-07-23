@@ -4,11 +4,11 @@
   venue: ACM MM 2025
   url: http://www.guanyuhu.com/
 
-- id: beyond-prompts-vega
-  title: "Beyond Prompts: Visual Prototype Quantization for Text-Free Affective Understanding."
-  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, Xinyu Yang"
-  venue: AAAI 2026 (Under Review)
-  url: http://www.guanyuhu.com/
+#- id: beyond-prompts-vega
+#  title: "Beyond Prompts: Visual Prototype Quantization for Text-Free Affective Understanding."
+#  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, Xinyu Yang"
+#  venue: AAAI 2026 (Under Review)
+#  url: http://www.guanyuhu.com/
 
 - id: fair-domain-generalization
   title: "Fair Domain Generalization: An Information-Theoretic View."
@@ -16,11 +16,11 @@
   venue: AAAI 2026 (Under Review)
   url: https://www.arxiv.org/abs/2507.05823
 
-- id: cognitive-priors-multitask
-  title: "From Cognitive Priors to Instance Semantics: A Unified Framework for Multi-task Affective Computing."
-  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, and Xinyu Yang"
-  venue: WACV 2026 (Under Review)
-  url: http://www.guanyuhu.com/
+#- id: cognitive-priors-multitask
+#  title: "From Cognitive Priors to Instance Semantics: A Unified Framework for Multi-task Affective Computing."
+#  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, and Xinyu Yang"
+#  venue: WACV 2026 (Under Review)
+#  url: http://www.guanyuhu.com/
 
 - id: fairness-protocol-tbiom
   title: "Rethinking Affect Analysis: A Protocol for Ensuring Fairness and Consistency."
@@ -34,11 +34,11 @@
   venue: ICCV 2025
   url: https://affective-behavior-analysis-in-the-wild.github.io/9th/
 
-- id: affective-causal-discovery
-  title: "Human-Aligned Affective Causal Discovery in Facial Behavior."
-  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, and Xinyu Yang"
-  venue: NeurIPS 2025 (Under Review)
-  url: http://www.guanyuhu.com/
+#- id: affective-causal-discovery
+#  title: "Human-Aligned Affective Causal Discovery in Facial Behavior."
+#  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, and Xinyu Yang"
+#  venue: NeurIPS 2025 (Under Review)
+#  url: http://www.guanyuhu.com/
 
 - id: demographically-aware-benchmark
   title: "A Demographically-Aware Benchmarking Framework for Affective Analysis."
