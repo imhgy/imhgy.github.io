@@ -12,6 +12,7 @@
 
   @include clearfix();
   margin-bottom: 1em;
+  padding-top: 0.6em;
 
   @include breakpoint($large) {
     @include span(2 of 12);
@@ -69,50 +70,60 @@
    Author profile and links
    ========================================================================== */
 .profile_box {
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
   @include breakpoint($large) {
     display: block;
+    padding-left: 0;
   }
-  display: flex;
-  justify-content: flex-start;
-  align-content: flex-start;
-  align-items: center;
 }
 
-.author__avatar {
-  display: table-cell;
-  vertical-align: top;
-  width: 75px;
-  text-align: center; // 让 img 在小屏下居中
+.profile_inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
 
   @include breakpoint($large) {
-    display: block;
-    width: auto;
-    height: auto;
-    margin: 0 auto; // 大屏下整体居中
-    text-align: center;
+    display: block; // 大屏改为垂直堆叠
+    max-width: none;
+    width: 100%;
   }
+}
+
+
+.author__avatar {
+  flex-shrink: 0;
+  margin-right: 10px;
 
   img {
     display: block;
-    margin: 0 auto; // 让头像图片水平居中
-    max-width: 175px;
-    min-width: 75px;
+    margin: 0 auto;
     border-radius: 50%;
+    max-width: 135px;
+    min-width: 120px;
+    border: 1px solid #db230054;
+    padding: 5px;
 
     @include breakpoint($large) {
+      min-width: 160px;
       padding: 5px;
-      border: 1px solid $border-color;
+      border: 1px solid #db230054;
     }
+  }
+
+  @include breakpoint($large) {
+    margin: 0 auto;
+    text-align: center;
+    width: auto;
   }
 }
 
-
 .author__content {
-  display: table-cell;
-  vertical-align: top;
-  padding-left: 10px;
-  min-width: 120px;
-  // padding-right: 25px;
+  display: block;
+  flex-grow: 1;
+  width: auto;
   line-height: 1;
 
   p {
@@ -124,6 +135,7 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    max-width: 100%;
   }
 }
 
@@ -139,10 +151,6 @@
   }
 }
 
-.sidebar.sticky {
-    width: 16.254237%;
-}
-
 .sidebar .author__name {
   @include breakpoint($medium) {
     font-size: $type-size-3;
@@ -151,13 +159,21 @@
   font-size: $type-size-4;
 }
 
-.author__bio {
-  margin-top: 0;
-  margin-bottom: 10px;
+.author__university {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
 
-  @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 20px;
+.author__bio {
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.author__bio, .author__university {
+
+  p {
+    font-size: 0.99em;
+    line-height: 1;
   }
 }
 
@@ -209,7 +225,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.5em;
+    gap: 0.7em;
     position: relative;
     margin: 0 auto;
     padding: 0.5em 0;
@@ -331,4 +347,51 @@
   }
 }
 
+.author__icons_sm {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
 
+  @include breakpoint($large) {
+    display: none;
+  }
+
+  ul.social-icons-sm {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6em;
+
+    li {
+      display: inline-flex;
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        transition: transform 0.2s ease;
+        text-decoration: none;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+
+        img, svg {
+          max-width: 1.2em;
+          height: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+.author__urls,
+.author__urls_sm {
+  @include breakpoint(max-width $large - 1px) {
+    display: none !important;
+  }
+}

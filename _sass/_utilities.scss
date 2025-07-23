@@ -439,6 +439,7 @@ body:hover .visually-hidden button {
    Footnotes
    ========================================================================== */
 
+
 .footnote {
   color: mix(#fff, $gray, 25%);
   text-decoration: none;
@@ -483,14 +484,18 @@ a {
 }
 
 .publication-card {
-  margin-left: 10px;
+  margin: 0 auto 1rem;
   width: 95%;
   border-radius: 12px;
-  padding: 1rem 2rem 0.6rem 2rem;
-  margin-bottom: 1rem;
+  padding: 0.6rem;
   background: #f9f9fc;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   transition: all 0.2s ease;
+
+  @include breakpoint(max-width 600px) {
+    padding: 0.8rem 0.6rem 0.6rem 0rem;
+    width: 100%;
+  }
 
   &:hover {
     background: #f0f4ff;
@@ -505,12 +510,19 @@ a {
   }
 
   .pub-title {
+    display: flex;
+    align-items: flex-start;
     font-weight: 600;
     font-size: 1.05rem;
     margin-bottom: 0.4rem;
-    line-height: 1;
+    line-height: 1.4;
+    gap: 0.5rem; // 可选，控制编号和标题之间的间距
+    word-break: break-word; // 保证长标题自动换行
 
     .pub-index {
+      flex-shrink: 0;
+      width: 2em; // 保证无论是一位还是两位数字都宽度一致
+      text-align: right;
       color: #494e52;
       font-weight: 600;
       margin-right: 0.4rem;
@@ -526,19 +538,27 @@ a {
     }
   }
 
-  .pub-authors {
+  .pub-authors,
+  .pub-venue {
+    margin-left: 3.3em; // 与标题对齐（和 .pub-index 宽度一致）
     font-size: 0.92rem;
-    margin-bottom: 0.3rem;
-    color: #333;
     font-style: italic;
-    margin-left: 1.5rem;
+    color: #333;
+
+    @include breakpoint(max-width 600px) {
+      margin-left: 2.9rem;
+      font-size: 0.88rem;
+    }
+  }
+
+  .pub-authors {
+    margin-bottom: 0.3rem;
   }
 
   .pub-venue {
-    font-size: 0.85rem;
-    color: #666;
     font-weight: bold;
-    margin-left: 1.5rem;
+    color: #666;
+    text-decoration: underline;
 
     .pub-arxiv {
       margin-left: 0.5rem;
@@ -547,25 +567,35 @@ a {
   }
 }
 
-.page {
-  width: 82.050847% !important;
-}
-
 .research-grid {
   margin-top: 2rem;
 
   .grid-container {
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
     gap: 1rem;
   }
 
   .grid-item {
-    padding: 0rem 0.4rem 1rem 1rem;
+    padding: 0rem 0.4rem 1rem 0.4rem;
     border-radius: 8px;
     background: #f9f9fc;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%; // 保证高度撑满（如果需要）
+
+    @media screen and (min-width: 768px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .section-block {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
 
     .reference-list {
       color: #1a3c8c;
@@ -594,17 +624,15 @@ a {
 
     h3 {
       color: #494e52;
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-weight: 600;
       text-align: center;
-      margin-bottom: 0.8rem;
     }
 
     h4 {
-      font-size: 0.9rem;
+      font-size: 1rem;
       font-weight: 600;
       color: #494e52;
-      margin-top: 1rem;
       margin-bottom: 0.4rem;
       border-left: 3px solid #0056d6;
       padding-left: 0.5rem;
@@ -628,6 +656,7 @@ a {
     }
   }
 }
+
 
 .awards-section {
   margin-top: 1rem;
@@ -674,17 +703,37 @@ a {
   margin-left: 10px;
   width: 95%;
   border-radius: 12px;
-  padding: 1rem 2rem 0.6rem 2rem;
+  padding: 1rem;
   margin-bottom: 1rem;
   background: #f9f9fc;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   transition: all 0.2s ease;
 }
+
+/* 大屏时设置 padding 为 2rem */
+@media screen and (min-width: 768px) {
+  .published-database {
+    padding: 2rem;
+  }
+}
+
+
 .section-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: center; // 垂直居中
+  justify-content: space-between; // 两边对齐（h2 左，a 右）
+  flex-wrap: wrap; // 小屏可换行
+  gap: 1rem; // 可选：小屏换行时保持间距
   margin-bottom: 1rem;
+  margin-top: 0.5em;
+}
+
+@media (max-width: 600px) {
+  .section-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .section-header h2 {
@@ -692,6 +741,7 @@ a {
   font-size: 1.2rem;
   font-weight: 600;
 }
+
 h1#code {
   display: flex;
   align-items: center; /* 垂直居中 */
@@ -729,7 +779,9 @@ h1#code > img {
 }
 
 .code-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
   background-color: #1a3c8c;
   color: #fff;
   padding: 0.5rem 1rem;
@@ -737,9 +789,19 @@ h1#code > img {
   border-radius: 5px;
   font-weight: 600;
   transition: background-color 0.2s;
-  margin-top: 0.5rem;
+  font-size: 0.95rem;
 }
+
 
 .code-link:hover {
   background-color: #0f2964;
+}
+
+p {
+  //margin-bottom: 0.5em;
+  text-align: justify;
+}
+
+.page__content p {
+  margin: 0 0 1em;
 }

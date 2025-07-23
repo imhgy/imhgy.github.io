@@ -10,19 +10,19 @@ redirect_from:
 
 <h1 id="Hello" style="margin-top: 1rem">👋 Hello!</h1>
 
-I am a **final-year Ph.D. candidate** at Xi’an Jiaotong University, under the supervision
-of [Prof. Xinyu Yang](https://gr.xjtu.edu.cn/web/xyyang), and was a **visiting Ph.D.** (2023–2024) at Queen
-Mary University of London, supervised by [Prof. Dimitrios Kollias](https://sites.google.com/view/dimitrioskollias).
-
 I currently work as a **Research Associate** at
-[Multimedia & Vision Group @ QMUL](https://www.qmul.ac.uk/eecs/research/research-centres-and-groups/multimedia--vision-mmv-research-group/),
+[_Multimedia & Vision Group @ QMUL_](https://www.qmul.ac.uk/eecs/research/research-centres-and-groups/multimedia--vision-mmv-research-group/),
 focusing on *AI-Enabled Face Analysis in the Wild*
-with [Prof. Dimitrios Kollias](https://sites.google.com/view/dimitrioskollias).
-In parallel, I work as a **Research Associate** at the University of Exeter, focusing on *Fairness in Personality
-Analysis*, in collaboration with [Prof. Zeyu Fu](https://zeyufu.github.io/)
-and [Prof. Siyang Song](https://hbuglab.com/people.html).
+with Prof. [Dimitrios Kollias](https://sites.google.com/view/dimitrioskollias).
+In parallel, I work as a **Research Associate** at the _University of Exeter_, focusing on *Fairness in Personality
+Analysis*, in collaboration with Prof. [Zeyu Fu](https://zeyufu.github.io/)
+and Prof. [Siyang Song](https://hbuglab.com/people.html).
 
-<span style="color: #ea1c25; font-weight: bold;">🔥I am currently open to Postdoctoral Research opportunities starting in
+I am a **final-year Ph.D. candidate** at _Xi’an Jiaotong University_, under the supervision
+of Prof. [Xinyu Yang](https://gr.xjtu.edu.cn/web/xyyang), and was a **visiting Ph.D.** (2023–2024) at _Queen
+Mary University of London_, supervised by Prof. [Dimitrios Kollias](https://sites.google.com/view/dimitrioskollias).
+
+<span style="color: #ea1c25; font-weight: bold;">🔥I am currently open to _Postdoctoral Research_ opportunities starting in
 2025/2026!</span>
 
 # 🎯 Research Interests
@@ -30,191 +30,219 @@ and [Prof. Siyang Song](https://hbuglab.com/people.html).
 <section class="research-grid">
   <div class="grid-container">
     <div class="grid-item">
-      <h3>Human Behavior Analysis</h3>
-      <h4>Facial Behavior Analysis</h4>
-      <ul>
-        <li>Expressions, Action-Units (AUs), Valence-Arousal (VA) Analysis</li>
-      </ul>
-      <p class="reference-list">Featured Works:
-        {% assign target_ids1 = "cognitive-priors-multitask,unified-affective-mtl,beyond-prompts-vega" | split: "," %}
-        {% assign pubs = site.data.publications %}
-        {% assign result_links1 = "" | split: "" %}
-        {% for pub in pubs %}
+      <h3>Affective Analysis</h3>
+      <div class="section-block">
+          <h4>Facial & Body Behavior</h4>
+          <ul>
+            <li>Expressions Recognition</li>
+            <li>Action-Unit (AU) Detection</li>
+            <li>Valence-Arousal (VA) Estimation</li>
+            <li>Gesture & Pose Analysis</li>
+          </ul>
+          <p class="reference-list">Featured Works:
+            {% assign target_ids1 = "cognitive-priors-multitask,unified-affective-mtl,emotions-to-violence-abaw9,beyond-prompts-vega,abaw8-workshop,abaw7-competition,abaw6-competition,avda-feature-fusion" | split: "," %}
+            {% assign pubs = site.data.publications %}
+            {% assign result_links1 = "" | split: "" %}
+            {% for pub in pubs %}
+              {% assign current_id = pub.id %}
+              {% if target_ids1 contains current_id %}
+                {% assign item = forloop.index | append: '|' | append: current_id %}
+                {% assign result_links1 = result_links1 | push: item %}
+              {% endif %}
+            {% endfor %}
+            {% for item in result_links1 %}
+              {% assign parts = item | split: '|' %}
+              <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          </p>
+      </div>
+      <div class="section-block">
+        <h4>Multi-Task Modeling</h4>
+        <ul>
+          <li>Unified Affective Analysis Framework</li>
+          <li>Shared representation learning & task-specific adaptation</li>
+        </ul>
+        <p class="reference-list">Featured Works:
+          {% assign target_ids2 = "beyond-prompts-vega,cognitive-priors-multitask,abaw7-competition" | split: "," %}
+          {% assign result_links2 = "" | split: "" %}
+          {% for pub in pubs %}
           {% assign current_id = pub.id %}
-          {% if target_ids1 contains current_id %}
-            {% assign item = forloop.index | append: '|' | append: current_id %}
-            {% assign result_links1 = result_links1 | push: item %}
+          {% if target_ids2 contains current_id %}
+          {% assign item = forloop.index | append: '|' | append: current_id %}
+          {% assign result_links2 = result_links2 | push: item %}
           {% endif %}
-        {% endfor %}
-        {% for item in result_links1 %}
+          {% endfor %}
+          {% for item in result_links2 %}
           {% assign parts = item | split: '|' %}
           <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-      </p>
-      <h4>Multi-Task Modeling</h4>
-      <ul>
-        <li>Unified Expr AU VA Analysis</li>
-      </ul>
-      <p class="reference-list">Featured Works:
-        {% assign target_ids2 = "beyond-prompts-vega,abaw6-competition" | split: "," %}
-        {% assign result_links2 = "" | split: "" %}
-        {% for pub in pubs %}
-        {% assign current_id = pub.id %}
-        {% if target_ids2 contains current_id %}
-        {% assign item = forloop.index | append: '|' | append: current_id %}
-        {% assign result_links2 = result_links2 | push: item %}
-        {% endif %}
-        {% endfor %}
-        {% for item in result_links2 %}
-        {% assign parts = item | split: '|' %}
-        <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-      </p>
+          {% endfor %}
+        </p>
+      </div>
     </div>
     <div class="grid-item">
       <h3>Trustworthy AI</h3>
-      <h4>Fairness & Bias</h4>
-      <ul>
-        <li>Fair & Consistent Affect Analysis</li>
-        <li>Domain & Fair Generalization</li>
-      </ul>
-      <p  class="reference-list">Featured Works:
-        {% assign target_ids1 = "fair-domain-generalization,fairness-protocol-tbiom,bridging-fair-affect" | split: "," %}
-        {% assign pubs = site.data.publications %}
-        {% assign result_links1 = "" | split: "" %}
-        {% for pub in pubs %}
+      <div class="section-block">
+        <h4>Fairness & Consistent</h4>
+        <ul>
+          <li>Fair & Consistent Analysis</li>
+          <li>Domain-Generalized & Bias-Resilient Modeling</li>
+          <li>Fairness in Continuous Tasks</li>
+        </ul>
+        <p  class="reference-list">Featured Works:
+          {% assign target_ids1 = "fair-domain-generalization,fairness-protocol-tbiom,demographically-aware-benchmark,bridging-fair-affect,recruitment" | split: "," %}
+          {% assign pubs = site.data.publications %}
+          {% assign result_links1 = "" | split: "" %}
+          {% for pub in pubs %}
+            {% assign current_id = pub.id %}
+            {% if target_ids1 contains current_id %}
+              {% assign item = forloop.index | append: '|' | append: current_id %}
+              {% assign result_links1 = result_links1 | push: item %}
+            {% endif %}
+          {% endfor %}
+          {% for item in result_links1 %}
+            {% assign parts = item | split: '|' %}
+            <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </p>
+      </div>
+      <div class="section-block">
+        <h4>Causal & Explainability</h4>
+        <ul>
+          <li>Counterfactual Reasoning</li>
+          <li>Causal Discovery</li>
+          <li>Interpretable Affective Modeling</li>
+        </ul>
+        <p   class="reference-list">Featured Works:
+          {% assign target_ids2 = "affective-causal-discovery,beyond-prompts-vega" | split: "," %}
+          {% assign result_links2 = "" | split: "" %}
+          {% for pub in pubs %}
           {% assign current_id = pub.id %}
-          {% if target_ids1 contains current_id %}
-            {% assign item = forloop.index | append: '|' | append: current_id %}
-            {% assign result_links1 = result_links1 | push: item %}
+          {% if target_ids2 contains current_id %}
+          {% assign item = forloop.index | append: '|' | append: current_id %}
+          {% assign result_links2 = result_links2 | push: item %}
           {% endif %}
-        {% endfor %}
-        {% for item in result_links1 %}
+          {% endfor %}
+          {% for item in result_links2 %}
           {% assign parts = item | split: '|' %}
           <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-      </p>
-      <h4>Causal & Explainability</h4>
-      <ul>
-        <li>Counterfactual Intervention</li>
-        <li>Causal Discovery</li>
-        <li>Interpretable Modeling</li>
-      </ul>
-      <p   class="reference-list">Featured Works:
-        {% assign target_ids2 = "affective-causal-discovery,beyond-prompts-vega" | split: "," %}
-        {% assign result_links2 = "" | split: "" %}
-        {% for pub in pubs %}
-        {% assign current_id = pub.id %}
-        {% if target_ids2 contains current_id %}
-        {% assign item = forloop.index | append: '|' | append: current_id %}
-        {% assign result_links2 = result_links2 | push: item %}
-        {% endif %}
-        {% endfor %}
-        {% for item in result_links2 %}
-        {% assign parts = item | split: '|' %}
-        <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-      </p>
+          {% endfor %}
+        </p>
+      </div>
     </div>
     <div class="grid-item">
       <h3>Multimodal Learning</h3>
-      <h4>Vision-Language Model</h4>
-      <ul>
-        <li>VLMs Representation Learning</li>
-      </ul>
-      <p class="reference-list">Featured Works:
-        {% assign target_ids1 = "cognitive-priors-multitask" | split: "," %}
-        {% assign pubs = site.data.publications %}
-        {% assign result_links1 = "" | split: "" %}
-        {% for pub in pubs %}
+      <div class="section-block">
+        <h4>VLMS</h4>
+        <ul>
+          <li>Representation Learning</li>
+          <li>Prompt Learning</li>
+          <li>Visual-Language Alignment</li>
+        </ul>
+        <p class="reference-list">Featured Works:
+          {% assign target_ids1 = "cognitive-priors-multitask,beyond-prompts-vega,grounding-emotion-recognition,unified-affective-mtl" | split: "," %}
+          {% assign pubs = site.data.publications %}
+          {% assign result_links1 = "" | split: "" %}
+          {% for pub in pubs %}
+            {% assign current_id = pub.id %}
+            {% if target_ids1 contains current_id %}
+              {% assign item = forloop.index | append: '|' | append: current_id %}
+              {% assign result_links1 = result_links1 | push: item %}
+            {% endif %}
+          {% endfor %}
+          {% for item in result_links1 %}
+            {% assign parts = item | split: '|' %}
+            <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </p>
+      </div>
+      <div class="section-block">
+        <h4>Multimodal Fusion & Alignment</h4>
+        <ul>
+          <li>Audio, Visual & Language</li>
+          <li>Prototype-based multimodal representation learning</li>
+          <li>Body–Facial Behavior Fusion</li>
+        </ul>
+        <p  class="reference-list">Featured Works:
+          {% assign target_ids2 = "grounding-emotion-recognition,emotions-to-violence-abaw9,abaw8-workshop,video-emotion-facial-body,msrf-graph-emotion,avda-feature-fusion" | split: "," %}
+          {% assign result_links2 = "" | split: "" %}
+          {% for pub in pubs %}
           {% assign current_id = pub.id %}
-          {% if target_ids1 contains current_id %}
-            {% assign item = forloop.index | append: '|' | append: current_id %}
-            {% assign result_links1 = result_links1 | push: item %}
+          {% if target_ids2 contains current_id %}
+          {% assign item = forloop.index | append: '|' | append: current_id %}
+          {% assign result_links2 = result_links2 | push: item %}
           {% endif %}
-        {% endfor %}
-        {% for item in result_links1 %}
+          {% endfor %}
+          {% for item in result_links2 %}
           {% assign parts = item | split: '|' %}
           <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-      </p>
-      <h4>Cross-Modal Representation Alignment</h4>
-      <ul>
-        <li>Audio, Visual, Language Representation Alignment</li>
-        <li>Prototypes Learning</li>
-      </ul>
-      <p  class="reference-list">Featured Works:
-        {% assign target_ids2 = "grounding-emotion-recognition" | split: "," %}
-        {% assign result_links2 = "" | split: "" %}
-        {% for pub in pubs %}
-        {% assign current_id = pub.id %}
-        {% if target_ids2 contains current_id %}
-        {% assign item = forloop.index | append: '|' | append: current_id %}
-        {% assign result_links2 = result_links2 | push: item %}
-        {% endif %}
-        {% endfor %}
-        {% for item in result_links2 %}
-        {% assign parts = item | split: '|' %}
-        <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-      </p>
+          {% endfor %}
+        </p>
+      </div>
     </div>
     <div class="grid-item">
-      <h3>Human Behavior Generation</h3>
-      <h4>Talking Head Generation</h4>
-      <ul>
-        <li>Emotion-controllable, facial and head motion transfer</li>
-      </ul>
-      <p  class="reference-list">Featured Works:
-        <a href="#nerf">[Second Prize]</a>
-      </p>
-      <h4>Reaction Generation</h4>
-      <ul>
-        <li>Facial Responses (Reaction) Generation.</li>
-      </ul>
-      <p  class="reference-list">Featured Works:
-        {% assign target_ids2 = "robust-reaction-generation" | split: "," %}
-        {% assign result_links2 = "" | split: "" %}
-        {% for pub in pubs %}
-        {% assign current_id = pub.id %}
-        {% if target_ids2 contains current_id %}
-        {% assign item = forloop.index | append: '|' | append: current_id %}
-        {% assign result_links2 = result_links2 | push: item %}
-        {% endif %}
-        {% endfor %}
-        {% for item in result_links2 %}
-        {% assign parts = item | split: '|' %}
-        <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-      </p>
+      <h3>Behavior Generation</h3>
+      <div class="section-block">
+        <h4>Talking Head Generation</h4>
+        <ul>
+          <li>StyleGAN, Diffusion, NeRF</li>
+          <li>Controllable Facial and Head Motion Transfer</li>
+          <li>Multi-view and identity-preserving generation</li>
+        </ul>
+        <p  class="reference-list">Featured Works:
+          <a href="#nerf">[Second Prize]</a>
+        </p>
+      </div>
+      <div class="section-block">
+        <h4>Reaction Generation</h4>
+        <ul>
+          <li>Generation of Facial Reactions to Stimuli</li>
+          <li>Personalized and Affect-aware Response</li>
+        </ul>
+        <p  class="reference-list">Featured Works:
+          {% assign target_ids2 = "robust-reaction-generation" | split: "," %}
+          {% assign result_links2 = "" | split: "" %}
+          {% for pub in pubs %}
+          {% assign current_id = pub.id %}
+          {% if target_ids2 contains current_id %}
+          {% assign item = forloop.index | append: '|' | append: current_id %}
+          {% assign result_links2 = result_links2 | push: item %}
+          {% endif %}
+          {% endfor %}
+          {% for item in result_links2 %}
+          {% assign parts = item | split: '|' %}
+          <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
 # ✨ News
 
-- *2025.07*: &nbsp; 🎉 One paper accepted at **ACM MM 2025**
+- *2025.07*: &nbsp; 🎉 One paper accepted at **ACM MM 2025** !
 - *2025.07*: &nbsp; 📢 Our work presented at
-  the [BMVA Symposium on AI Security](https://www.bmva.org/meetings/25-07-16-AISecurity.html)
-- *2025.06*: &nbsp; 🚀 Served as **Program Chair, Session Chair**, and **Data Chair** of
-  the [9th ABAW Workshop and Competition](https://affective-behavior-analysis-in-the-wild.github.io/9th/) at **ICCV 2025**
+  the [BMVA Symposium on AI Security](https://www.bmva.org/meetings/25-07-16-AISecurity.html) !
+- *2025.06*: &nbsp; 👨‍💻 Served as **Program Chair, Session Chair**, and **Data Chair** of
+  the [9th ABAW Workshop and Competition](https://affective-behavior-analysis-in-the-wild.github.io/9th/) at **ICCV 2025** !
 - *2025.04*: &nbsp; 🎉 One journal paper accepted
-  by [IEEE Transactions on Biometrics, Behavior, and Identity Science](https://ieeexplore.ieee.org/abstract/document/10919136)
-- *2025.01*: &nbsp; 🚀 Served as **Program Chair, Session Chair**, and **Data Chair** of
-  the [8th ABAW Workshop and Competition](https://affective-behavior-analysis-in-the-wild.github.io/8th/index.html) at **CVPR 2025**
-- *2024.08*: &nbsp; 🏆 Honored with the **Best Reviewed Paper Award** at **IEEE FG 2024**
-- *2024.08*: &nbsp; 🎉 One paper accepted at [IEEE IJCB 2024](https://ieeexplore.ieee.org/document/10744499)
+  by [IEEE Transactions on Biometrics, Behavior, and Identity Science](https://ieeexplore.ieee.org/abstract/document/10919136) !
+- *2025.01*: &nbsp; 👨‍💻 Served as **Program Chair, Session Chair**, and **Data Chair** of
+  the [8th ABAW Workshop and Competition](https://affective-behavior-analysis-in-the-wild.github.io/8th/index.html) at **CVPR 2025** !
+- *2024.08*: &nbsp; 🏆 Honored with the **Best Reviewed Paper Award** at **IEEE FG 2024** !
+- *2024.08*: &nbsp; 🎉 One paper accepted at [IEEE IJCB 2024](https://ieeexplore.ieee.org/document/10744499) !
 - *2024.08*: &nbsp; 🎉 Two workshop papers accepted at **ECCV 2024**
-  [[1]](https://dl.acm.org/doi/10.1007/978-3-031-91581-9_3) [[2]](https://dl.acm.org/doi/10.1007/978-3-031-91581-9_1)
-- *2024.05*: &nbsp; 🚀 Served as **Program Chair, Session Chair**, and **Data Chair** of
-  the [7th ABAW Workshop and Competition](https://affective-behavior-analysis-in-the-wild.github.io/7th/index.html) at **ECCV 2024**
+  [[1]](https://dl.acm.org/doi/10.1007/978-3-031-91581-9_3) [[2]](https://dl.acm.org/doi/10.1007/978-3-031-91581-9_1) !
+- *2024.05*: &nbsp; 👨‍💻 Served as **Program Chair, Session Chair**, and **Data Chair** of
+  the [7th ABAW Workshop and Competition](https://affective-behavior-analysis-in-the-wild.github.io/7th/index.html) at **ECCV 2024** !
+- *2025.07*: &nbsp; 🎉 One journal paper accepted at **[JAMIA 2025](https://academic.oup.com/jamia/article/31/11/2749/7755392)** !
 - *2024.04*: &nbsp; 🎉 One paper accepted
-  at [IEEE CVPR 2024](https://openaccess.thecvf.com/content/CVPR2024W/ABAW/html/Kollias_The_6th_Affective_Behavior_Analysis_In-the-wild_ABAW_Competition_CVPRW_2024_paper.html)
-- *2024.03*: &nbsp; 🎉 One paper accepted at [IEEE FG 2024](https://ieeexplore.ieee.org/document/10582033)
-- *2024.01*: &nbsp; 🚀 Served as **Program Chair, Session Chair**, and **Data Chair** of the [6th ABAW Workshop and Competition](https://affective-behavior-analysis-in-the-wild.github.io/6th/) at
-  **IEEE CVPR 2024**
+  at [IEEE CVPR 2024](https://openaccess.thecvf.com/content/CVPR2024W/ABAW/html/Kollias_The_6th_Affective_Behavior_Analysis_In-the-wild_ABAW_Competition_CVPRW_2024_paper.html) !
+- *2024.03*: &nbsp; 🎉 One paper accepted at [IEEE FG 2024](https://ieeexplore.ieee.org/document/10582033) !
+- *2024.01*: &nbsp; 👨‍💻 Served as **Program Chair, Session Chair**, and **Data Chair** of the [6th ABAW Workshop and Competition](https://affective-behavior-analysis-in-the-wild.github.io/6th/) at
+  **IEEE CVPR 2024** !
 
-# 📝 Publications & Preprints
+# 📝 Selected Publications
 
 <section class="publications">
   {% for pub in site.data.publications %}
@@ -226,7 +254,7 @@ and [Prof. Siyang Song](https://hbuglab.com/people.html).
       </div>
       <div class="pub-authors">{{ pub.authors }}</div>
       <div class="pub-venue">
-        <em>{{ pub.venue }}</em>
+        <span>{{ pub.venue }}</span>
       </div>
     </div>
   {% endfor %}
@@ -260,34 +288,92 @@ and [Prof. Siyang Song](https://hbuglab.com/people.html).
 <section class="awards-section">
   <ul class="award-list">
     <li>
-      <strong>Best Reviewed Paper</strong> | IEEE FG 2024
+      <strong>🏅 Best Reviewed Paper</strong> | IEEE FG 2024
       <em>Bridging the Gap: Protocol Towards Fair and Consistent Affect Analysis.</em>
     </li>
     <li>
-      <strong>Second Prize</strong> | 2022 | China National Radio and Television Administration
+      <strong>💰 Innovative Talents International Cooperative Training Project Scholarship</strong> | 2023
+      <em>Fully-funded one-year overseas research visit.</em>
+    </li>
+    <li><strong>💰 Academic Scholarship</strong> | 2023 | Xi’an Jiaotong University</li>
+    <li>
+      <div class="anchor-offset" id="nerf"></div>
+      <strong>🏆 Second Prize</strong> | 2022 | China National Radio and Television Administration
       <em>Artificial Intelligence Application Innovation Competition</em>
-      <span class="award-project" id="nerf">Local Language IP Broadcasting Integration Platform Based on NeRF.</span>
+      <span class="award-project">Local Language IP Broadcasting Integration Platform Based on NeRF.</span>
     </li>
     <li>
-      <strong>Excellence Award</strong> | 2022 | China National Radio and Television Administration
+      <strong>🏆 Excellence Award</strong> ``| 2022 | China National Radio and Television Administration
       <em>New Video Technology Application Innovation Competition</em>
       <span class="award-project">Intelligent Media Activation System for Video Scenarios in the Petrochemical Industry.</span>
     </li>
+    <li><strong>🎖️ Outstanding Student Cadre</strong> | 2022, 2023 | Xi’an Jiaotong University</li>
+    <li><strong>🎖️ Outstanding Student</strong> | 2022, 2023 | Xi’an Jiaotong University</li>
+    <li><strong>🎖️ Outstanding Student Scholarship</strong> | 2023 | Xi’an Jiaotong University</li>
     <li>
-      <strong>Second Prize</strong> | 2021 | China National Radio and Television Administration
+      <strong>🏆 Second Prize</strong> | 2021 | China National Radio and Television Administration
       <em>Artificial Intelligence Application Innovation Competition</em>
       <span class="award-project">Audio-Visual Content Editing AI Platform Based on “Silk Road Cloud”.</span>
     </li>
     <li>
-      <strong>Second Prize</strong> | 2021 | China National Radio and Television Administration
+      <strong>🏆 Second Prize</strong> | 2021 | China National Radio and Television Administration
       <em>New Video Technology Application Innovation Competition</em>
       <span class="award-project">Ultra-HD Program Intelligent Production Project Based on Multimodal Fusion.</span>
     </li>
-    <li><strong>Outstanding Student Cadre</strong> | 2022, 2023 | Xi’an Jiaotong University</li>
-    <li><strong>Outstanding Student</strong> | 2022, 2023 | Xi’an Jiaotong University</li>
-    <li><strong>Outstanding Student Scholarship</strong> | 2023 | Xi’an Jiaotong University</li>
-    <li><strong>National Encouragement Scholarship</strong> | 2016 | China Ministry of Education (MoE)</li>
+    <li><strong>💰 National Encouragement Scholarship</strong> | 2016 | China Ministry of Education (MoE)</li>
   </ul>
 </section>
 
+# 📝 Patents
 
+<div class="publication-card">
+  <div class="pub-title">
+    <div class="pub-index">1.</div>
+    <div>
+      <a>A Facial Expression Recognition Method Based on Local Temporal-Spatial Features and Global Temporal Sequence Features.</a>
+    </div>
+  </div>
+  <div class="pub-venue">CN202110925608.5</div>
+</div>
+
+<div class="publication-card">
+  <div class="pub-title">
+    <div class="pub-index">2.</div>
+    <div>
+      <a>A Video Emotion Recognition Method Based on Body Posture Change Representation.</a>
+    </div>
+  </div>
+  <div class="pub-venue">CN202110926712.6</div>
+</div>
+
+<div class="publication-card">
+  <div class="pub-title">
+    <div class="pub-index">3.</div>
+    <div>
+      <a>A Depression Recognition Method Based on Voice and Facial Emotion Cues.</a>
+    </div>
+  </div>
+  <div class="pub-venue">CN202110874297.4</div>
+</div>
+
+<div class="publication-card">
+  <div class="pub-title">
+    <div class="pub-index">4.</div>
+    <div>
+      <a>A speaker face synthesis method, device and apparatus based on generative adversarial networks.</a>
+    </div>
+  </div>
+  <div class="pub-venue">CN202211493192.5</div>
+</div>
+
+<div class="publication-card">
+  <div class="pub-title">
+    <div class="pub-index">5.</div>
+    <div>
+      <a>An Occluded Face Recognition Method Based on Multi-Scale Attention Feature Learning, Device and Equipment.</a>
+    </div>
+  </div>
+  <div class="pub-venue">CN202211493911.3</div>
+</div>
+
+<div style="margin-bottom: 8rem"></div>

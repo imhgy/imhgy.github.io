@@ -6,17 +6,17 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title: "Guanyu Hu"
-description: "PhD student"
-repository: "RayeRen/acad-homepage.github.io"
-google_scholar_stats_use_cdn: true
+title: "Guanyu Hu (胡冠宇)"
+description: "Guanyu Hu (胡冠宇) QMUL XJTU"
+repository: "imhgy/imhgy.github.io"
 
 # google analytics
-google_analytics_id:  # get google_analytics_id from https://analytics.google.com/analytics/
+google_analytics_id: G-GPPXHRC911
+
 
 # SEO Related
-google_site_verification:  # get google_site_verification from https://search.google.com/search-console/about
-bing_site_verification:  # get bing_site_verification from https://www.bing.com/webmasters/about
+google-site-verification: uZIJ0Ocd1rC4zg3-8xvbvqBDJxwmI-Wnpv1-dnDCQQ4
+bing_site_verification:  FA9AD1323F684700333A43B938006C24
 baidu_site_verification:  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
 
 # Site Author
@@ -27,7 +27,7 @@ author:
   location: "London, UK"
   googlescholar: "https://scholar.google.com/citations?user=AxO-zOEAAAAJ&hl=en"
   email: "g.hu@qmul.ac.uk"
-  researchgate:  "https://www.researchgate.net/profile/Guanyu_Hu8?ev=hdr_xprf"
+  researchgate: "https://www.researchgate.net/profile/Guanyu_Hu8?ev=hdr_xprf"
   uri:
   bitbucket:
   codepen:
@@ -134,7 +134,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/London # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
@@ -144,6 +144,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-seo-tag
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate

@@ -12,6 +12,7 @@
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
   z-index: 20;
+  font-size: 1.1rem;
 
   &__inner-wrap {
     @include container;
@@ -57,7 +58,8 @@
   font-weight: 700;
 
   &--lg {
-    padding-right: 2em;
+    padding-left: 3.5rem;
+    padding-right: 6em;
     font-weight: 700;
   }
 }
