@@ -226,27 +226,27 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
 
 # ✨ News
 
-- *2025.07*: &nbsp; 🎉 One paper accepted at **ACM MM 2025** !
+- *2025.07*: &nbsp; 🎉 One conference paper accepted at **ACM MM 2025** !
 - *2025.07*: &nbsp; 📢 Our work presented at
   the [BMVA Symposium on AI Security](https://www.bmva.org/meetings/25-07-16-AISecurity.html) !
-- *2025.06*: &nbsp; 👨‍💻 Served as **Program Chair, Session Chair**, and **Data Chair** of
-  the [9th ABAW Workshop and Competition](https://affective-behavior-analysis-in-the-wild.github.io/9th/) at **ICCV 2025** !
+- *2025.06*: &nbsp; 👨‍💻 Served as **Program Chair, Session Chair** & **Data Chair** of
+  the _9th ABAW Workshop and Competition_ at **[ICCV 2025](https://affective-behavior-analysis-in-the-wild.github.io/9th/)** !
 - *2025.04*: &nbsp; 🎉 One journal paper accepted
-  by [IEEE Transactions on Biometrics, Behavior, and Identity Science](https://ieeexplore.ieee.org/abstract/document/10919136) !
-- *2025.01*: &nbsp; 👨‍💻 Served as **Program Chair, Session Chair**, and **Data Chair** of
-  the [8th ABAW Workshop and Competition](https://affective-behavior-analysis-in-the-wild.github.io/8th/index.html) at **CVPR 2025** !
+  by [**IEEE Transactions on Biometrics, Behavior, and Identity Science (TBIOM)**](https://ieeexplore.ieee.org/abstract/document/10919136) !
+- *2025.01*: &nbsp; 👨‍💻 Served as **Program Chair, Session Chair** & **Data Chair** of
+  the _8th ABAW Workshop and Competition_ at **[IEEE CVPR 2025](https://affective-behavior-analysis-in-the-wild.github.io/8th/index.html)** !
 - *2024.08*: &nbsp; 🏆 Honored with the **Best Reviewed Paper Award** at **IEEE FG 2024** !
-- *2024.08*: &nbsp; 🎉 One paper accepted at [IEEE IJCB 2024](https://ieeexplore.ieee.org/document/10744499) !
+- *2024.08*: &nbsp; 🎉 One conference paper accepted at [**IEEE IJCB 2024**](https://ieeexplore.ieee.org/document/10744499) !
 - *2024.08*: &nbsp; 🎉 Two workshop papers accepted at **ECCV 2024**
   [[1]](https://dl.acm.org/doi/10.1007/978-3-031-91581-9_3) [[2]](https://dl.acm.org/doi/10.1007/978-3-031-91581-9_1) !
-- *2024.05*: &nbsp; 👨‍💻 Served as **Program Chair, Session Chair**, and **Data Chair** of
-  the [7th ABAW Workshop and Competition](https://affective-behavior-analysis-in-the-wild.github.io/7th/index.html) at **ECCV 2024** !
+- *2024.05*: &nbsp; 👨‍💻 Served as **Program Chair, Session Chair** & **Data Chair** of
+  the _7th ABAW Workshop and Competition_ at **[ECCV 2024](https://affective-behavior-analysis-in-the-wild.github.io/7th/index.html)** !
 - *2025.07*: &nbsp; 🎉 One journal paper accepted at **[JAMIA 2025](https://academic.oup.com/jamia/article/31/11/2749/7755392)** !
-- *2024.04*: &nbsp; 🎉 One paper accepted
-  at [IEEE CVPR 2024](https://openaccess.thecvf.com/content/CVPR2024W/ABAW/html/Kollias_The_6th_Affective_Behavior_Analysis_In-the-wild_ABAW_Competition_CVPRW_2024_paper.html) !
-- *2024.03*: &nbsp; 🎉 One paper accepted at [IEEE FG 2024](https://ieeexplore.ieee.org/document/10582033) !
-- *2024.01*: &nbsp; 👨‍💻 Served as **Program Chair, Session Chair**, and **Data Chair** of the [6th ABAW Workshop and Competition](https://affective-behavior-analysis-in-the-wild.github.io/6th/) at
-  **IEEE CVPR 2024** !
+- *2024.04*: &nbsp; 🎉 One workshop paper accepted
+  at [**IEEE CVPR 2024**](https://openaccess.thecvf.com/content/CVPR2024W/ABAW/html/Kollias_The_6th_Affective_Behavior_Analysis_In-the-wild_ABAW_Competition_CVPRW_2024_paper.html) !
+- *2024.03*: &nbsp; 🎉 One conference paper accepted at [**IEEE FG 2024**](https://ieeexplore.ieee.org/document/10582033) !
+- *2024.01*: &nbsp; 👨‍💻 Served as **Program Chair, Session Chair** & **Data Chair** of the _6th ABAW Workshop and Competition_ at
+  **[IEEE CVPR 2024](https://affective-behavior-analysis-in-the-wild.github.io/6th/)** !
 
 # 📝 Selected Publications
 
