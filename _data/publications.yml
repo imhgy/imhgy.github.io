@@ -61,7 +61,7 @@
 - id: bridging-fair-affect
   title: "Bridging the Gap: Protocol Towards Fair and Consistent Affect Analysis."
   authors: "<span class=\"highlight\">Guanyu Hu</span>, Eleni Papadopoulou, Dimitrios Kollias, Paraskevi Tzouveli, Jie Wei, Xinyu Yang"
-  venue: CVPR 2025
+  venue: IEEE FG 2025
   url: https://ieeexplore.ieee.org/document/10582033
 
 - id: robust-reaction-generation
@@ -72,7 +72,7 @@
 
 - id: recruitment
   title: "Artificial intelligence for optimizing recruitment and retention in clinical trials: a scoping review."
-  authors: "Xiaoran Lu, Chen Yang, Lu Liang, Guanyu Hu, Ziyi Zhong, Zihao Jiang"
+  authors: "Xiaoran Lu, Chen Yang, Lu Liang, <span class=\"highlight\">Guanyu Hu</span>, Ziyi Zhong, Zihao Jiang"
   venue: Journal of the American Medical Informatics Association (JAMIA) 2024
   url: https://academic.oup.com/jamia/article/31/11/2749/7755392
 
@@ -91,7 +91,7 @@
 - id: abaw6-competition
   title: "The 6th Affective Behavior Analysis In-the-wild (ABAW) Competition."
   authors: "Dimitrios Kollias, P, Tzirakis, A, Cowen, S, Zafeiriou, ..., <span class=\"highlight\">Guanyu Hu</span>"
-  venue: CVPR 2024
+  venue: IEEE CVPR 2024
   url: https://affective-behavior-analysis-in-the-wild.github.io/6th/
 
 - id: msrf-graph-emotion

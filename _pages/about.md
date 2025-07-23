@@ -10,20 +10,17 @@ redirect_from:
 
 <h1 id="Hello" style="margin-top: 1rem">👋 Hello!</h1>
 
-I currently work as a **Research Associate** at
+I am currently a **Research Associate** at
 [_Multimedia & Vision Group @ QMUL_](https://www.qmul.ac.uk/eecs/research/research-centres-and-groups/multimedia--vision-mmv-research-group/),
-focusing on *AI-Enabled Face Analysis in the Wild*
-with Prof. [Dimitrios Kollias](https://sites.google.com/view/dimitrioskollias).
-In parallel, I work as a **Research Associate** at the _University of Exeter_, focusing on *Fairness in Personality
+working with Prof. [Dimitrios Kollias](https://sites.google.com/view/dimitrioskollias) on *AI-Enabled Face Analysis in the Wild*.
+In parallel, I also a **Research Associate** at the _University of Exeter_, focusing on *Fairness in Personality
 Analysis*, in collaboration with Prof. [Zeyu Fu](https://zeyufu.github.io/)
 and Prof. [Siyang Song](https://hbuglab.com/people.html).
 
-I am a **final-year Ph.D. candidate** at _Xi’an Jiaotong University_, under the supervision
-of Prof. [Xinyu Yang](https://gr.xjtu.edu.cn/web/xyyang), and was a **visiting Ph.D.** (2023–2024) at _Queen
-Mary University of London_, supervised by Prof. [Dimitrios Kollias](https://sites.google.com/view/dimitrioskollias).
+I am a **final-year Ph.D. candidate** at _Xi’an Jiaotong University_, supervised by Prof. [Xinyu Yang](https://gr.xjtu.edu.cn/web/xyyang). From 2023 to 2024, I was a **visiting researcher** at _Queen
+Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](https://sites.google.com/view/dimitrioskollias).
 
-<span style="color: #ea1c25; font-weight: bold;">🔥I am currently open to _Postdoctoral Research_ opportunities starting in
-2025/2026!</span>
+<span style="color: #ea1c25; font-weight: bold;">🔥 I'm open to _Postdoctoral Research_ opportunities starting in 2025/2026 — feel free to reach out!</span>
 
 # 🎯 Research Interests
 
@@ -121,7 +118,7 @@ Mary University of London_, supervised by Prof. [Dimitrios Kollias](https://site
           <li>Causal Discovery</li>
           <li>Interpretable Affective Modeling</li>
         </ul>
-        <p   class="reference-list">Featured Works:
+        <p   class="reference-list">Featured Works: [under review]
           {% assign target_ids2 = "affective-causal-discovery,beyond-prompts-vega" | split: "," %}
           {% assign result_links2 = "" | split: "" %}
           {% for pub in pubs %}
