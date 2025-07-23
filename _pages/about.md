@@ -27,6 +27,15 @@ Mary University of London_, supervised by Prof. [Dimitrios Kollias](https://site
 
 # 🎯 Research Interests
 
+<p>
+  My research centers on human affective behavior 
+  <span class="research-highlight">understanding and generation</span>, 
+  <span class="research-highlight">trustworthy AI</span>, and 
+  <span class="research-highlight">multimodal and multi-task learning</span>, 
+  with the goal of enabling 
+  <span class="research-highlight">interpretable, fair, and robust</span> systems for human-centered interaction.
+</p>
+
 <section class="research-grid">
   <div class="grid-container">
     <div class="grid-item">
