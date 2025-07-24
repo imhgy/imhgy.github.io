@@ -7,8 +7,9 @@
 
 # Site Settings
 title: "Guanyu Hu (胡冠宇)"
-description: "Personal website of Guanyu Hu (胡冠宇), researcher in Queen Mary University of London (QMUL) and Xi'An Jiaotong University (XJTU)."
+description: "Personal website of Guanyu Hu (胡冠宇), PhD researcher in Queen Mary University of London (QMUL) and Xi'An Jiaotong University (XJTU)."
 repository: "imhgy/imhgy.github.io"
+url: "https://www.guanyuhu.com/"
 
 # google analytics
 google_analytics_id: G-GPPXHRC911
@@ -16,7 +17,7 @@ google_analytics_id: G-GPPXHRC911
 # SEO Related
 google-site-verification: uZIJ0Ocd1rC4zg3-8xvbvqBDJxwmI-Wnpv1-dnDCQQ4
 bing_site_verification:  FA9AD1323F684700333A43B938006C24
-baidu_site_verification:  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
+baidu_site_verification:  codeva-nLInBejYmv
 
 # Site Author
 author:
