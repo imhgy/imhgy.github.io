@@ -20,7 +20,7 @@ and Prof. [Siyang Song](https://hbuglab.com/people.html).
 I am a **final-year Ph.D. candidate** at _Xi’an Jiaotong University_, supervised by Prof. [Xinyu Yang](https://gr.xjtu.edu.cn/web/xyyang). From 2023 to 2024, I was a **visiting researcher** at _Queen
 Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](https://sites.google.com/view/dimitrioskollias).
 
-<span style="color: #ea1c25; font-weight: bold;">🔥 I'm open to _Postdoctoral Research_ opportunities starting in 2025/2026 — feel free to reach out!</span>
+<span style="color: #ea1c25; font-weight: bold;">🔥 I’m currently open to industry and postdoctoral opportunities starting in 2025/2026 — feel free to reach out!</span>
 
 # 🎯 Research Interests
 
