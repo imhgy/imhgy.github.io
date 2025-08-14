@@ -567,8 +567,8 @@ a {
   }
 }
 
-.intro{
-  p{
+.intro {
+  p {
     margin: 0 0 0.5em !important;
   }
 }
@@ -684,7 +684,7 @@ a {
     padding: 0.5rem 4rem;
     /* border: 1px solid #1a3c8c; */
     border-radius: 10px;
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #494e52;
     background: #f0f4ff;
@@ -762,9 +762,11 @@ a {
       }
     }
   }
+
+  /* 手机保持两列，超小屏再单列 */
   @media screen and (max-width: 480px) {
     .grid-container {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, minmax(150px, 1fr));
 
       &::before {
         display: none;
@@ -776,6 +778,15 @@ a {
       opacity: 0.3;
     }
   }
+
+  /* 超小屏 <360px 才单列 */
+  @media screen and (max-width: 360px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
 }
 
 .awards-section {

@@ -28,7 +28,7 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
   <p>
     My research focuses on 
     <span class="research-highlight">affective analysis and generation</span>, 
-    encompassing <span class="research-highlight">multimodal & multi-task perception, fairness-aware & interpretable modeling, and emotion-controllable behavior synthesis</span>
+    encompassing <span class="research-highlight">multimodal & multi-task perception, fair & interpretable modeling, and emotion-controllable behavior synthesis</span>
   </p>
   <p>
     The ultimate goal is to pioneer human-computer interaction systems characterized by <span class="research-highlight">accurate, fair, and transparent</span> affective understanding,
