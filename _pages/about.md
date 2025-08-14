@@ -24,29 +24,85 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
 
 # 🎯 Research Interests
 
-<p>
-  My research centers on human affective behavior 
-  <span class="research-highlight">understanding and generation</span>, 
-  <span class="research-highlight">trustworthy AI</span>, and 
-  <span class="research-highlight">multimodal and multi-task learning</span>, 
-  with the goal of enabling 
-  <span class="research-highlight">interpretable, fair, and robust</span> systems for human-centered interaction.
-</p>
+<div class="intro">
+  <p>
+    My research focuses on 
+    <span class="research-highlight">affective analysis and generation</span>, 
+    encompassing <span class="research-highlight">multimodal & multi-task perception, fairness-aware & interpretable modeling, and emotion-controllable behavior synthesis</span>
+  </p>
+  <p>
+    The ultimate goal is to pioneer human-computer interaction systems characterized by <span class="research-highlight">accurate, fair, and transparent</span> affective understanding,
+    while manifesting <span class="research-highlight">empathetic, engaging, and sophisticatedly nuanced</span> expression capabilities spanning visual, linguistic, and vocal modalities.
+  </p>
+</div>
 
-<section class="research-grid">
-  <div class="grid-container">
-    <div class="grid-item">
-      <h3>Affective Analysis</h3>
-      <div class="section-block">
-          <h4>Facial & Body Behavior</h4>
+
+<section class="research-tree research-grid" aria-label="Affective Computing">
+  <div class="tree">
+    <a class="node root">Affective<br>Analysis & Generation</a>
+    <div class="connectors"><span class="v-line"></span></div>
+    <div class="grid-container">
+      <div id="affective-analysis" class="grid-item node child">
+        <h3>Affective Perception</h3>
+        <div class="section-block">
+            <h4>Facial & Body Analysis</h4>
+            <ul>
+              <li>Expressions Recognition</li>
+              <li>Action-Unit (AU) Detection</li>
+              <li>Valence-Arousal (VA) Estimation</li>
+              <li>Gesture & Pose Analysis</li>
+            </ul>
+            <p class="reference-list">Featured Works:
+              {% assign target_ids1 = "cognitive-priors-multitask,unified-affective-mtl,emotions-to-violence-abaw9,beyond-prompts-vega,abaw8-workshop,abaw7-competition,abaw6-competition,avda-feature-fusion" | split: "," %}
+              {% assign pubs = site.data.publications %}
+              {% assign result_links1 = "" | split: "" %}
+              {% for pub in pubs %}
+                {% assign current_id = pub.id %}
+                {% if target_ids1 contains current_id %}
+                  {% assign item = forloop.index | append: '|' | append: current_id %}
+                  {% assign result_links1 = result_links1 | push: item %}
+                {% endif %}
+              {% endfor %}
+              {% for item in result_links1 %}
+                {% assign parts = item | split: '|' %}
+                <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            </p>
+        </div>
+        <div class="section-block">
+          <h4>Multi-Task Modeling</h4>
           <ul>
-            <li>Expressions Recognition</li>
-            <li>Action-Unit (AU) Detection</li>
-            <li>Valence-Arousal (VA) Estimation</li>
-            <li>Gesture & Pose Analysis</li>
+            <li>Unified Affective Analysis Framework</li>
+            <li>Shared Representation Learning & Task-Specific Adaptation</li>
           </ul>
           <p class="reference-list">Featured Works:
-            {% assign target_ids1 = "cognitive-priors-multitask,unified-affective-mtl,emotions-to-violence-abaw9,beyond-prompts-vega,abaw8-workshop,abaw7-competition,abaw6-competition,avda-feature-fusion" | split: "," %}
+            {% assign target_ids2 = "beyond-prompts-vega,cognitive-priors-multitask,abaw7-competition" | split: "," %}
+            {% assign result_links2 = "" | split: "" %}
+            {% for pub in pubs %}
+            {% assign current_id = pub.id %}
+            {% if target_ids2 contains current_id %}
+            {% assign item = forloop.index | append: '|' | append: current_id %}
+            {% assign result_links2 = result_links2 | push: item %}
+            {% endif %}
+            {% endfor %}
+            {% for item in result_links2 %}
+            {% assign parts = item | split: '|' %}
+            <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          </p>
+        </div>
+      </div>
+      <div id="trustworthy-ai" class="grid-item node child">
+        <h3>Fair & Interpretable</h3>
+        <div class="section-block">
+          <h4>Fairness & Consistency</h4>
+          <ul>
+            <li>Fair & Consistent Analysis</li>
+            <li>Domain-Generalized & Bias-Resilient Modeling</li>
+            <li>Fairness in Continuous Tasks</li>
+          </ul>
+          <p  class="reference-list">Featured Works:
+            {% assign target_ids1 = "fair-domain-generalization,fairness-protocol-tbiom,demographically-aware-benchmark,bridging-fair-affect,recruitment" | split: "," %}
             {% assign pubs = site.data.publications %}
             {% assign result_links1 = "" | split: "" %}
             {% for pub in pubs %}
@@ -61,164 +117,116 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
               <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
             {% endfor %}
           </p>
-      </div>
-      <div class="section-block">
-        <h4>Multi-Task Modeling</h4>
-        <ul>
-          <li>Unified Affective Analysis Framework</li>
-          <li>Shared representation learning & task-specific adaptation</li>
-        </ul>
-        <p class="reference-list">Featured Works:
-          {% assign target_ids2 = "beyond-prompts-vega,cognitive-priors-multitask,abaw7-competition" | split: "," %}
-          {% assign result_links2 = "" | split: "" %}
-          {% for pub in pubs %}
-          {% assign current_id = pub.id %}
-          {% if target_ids2 contains current_id %}
-          {% assign item = forloop.index | append: '|' | append: current_id %}
-          {% assign result_links2 = result_links2 | push: item %}
-          {% endif %}
-          {% endfor %}
-          {% for item in result_links2 %}
-          {% assign parts = item | split: '|' %}
-          <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
-          {% endfor %}
-        </p>
-      </div>
-    </div>
-    <div class="grid-item">
-      <h3>Trustworthy AI</h3>
-      <div class="section-block">
-        <h4>Fairness & Consistent</h4>
-        <ul>
-          <li>Fair & Consistent Analysis</li>
-          <li>Domain-Generalized & Bias-Resilient Modeling</li>
-          <li>Fairness in Continuous Tasks</li>
-        </ul>
-        <p  class="reference-list">Featured Works:
-          {% assign target_ids1 = "fair-domain-generalization,fairness-protocol-tbiom,demographically-aware-benchmark,bridging-fair-affect,recruitment" | split: "," %}
-          {% assign pubs = site.data.publications %}
-          {% assign result_links1 = "" | split: "" %}
-          {% for pub in pubs %}
+        </div>
+        <div class="section-block">
+          <h4>Causality & Explainability</h4>
+          <ul>
+            <li>Counterfactual Reasoning</li>
+            <li>Causal Discovery</li>
+            <li>Interpretable Affective Modeling</li>
+          </ul>
+          <p   class="reference-list">Featured Works: [under review]
+            {% assign target_ids2 = "affective-causal-discovery,beyond-prompts-vega" | split: "," %}
+            {% assign result_links2 = "" | split: "" %}
+            {% for pub in pubs %}
             {% assign current_id = pub.id %}
-            {% if target_ids1 contains current_id %}
-              {% assign item = forloop.index | append: '|' | append: current_id %}
-              {% assign result_links1 = result_links1 | push: item %}
+            {% if target_ids2 contains current_id %}
+            {% assign item = forloop.index | append: '|' | append: current_id %}
+            {% assign result_links2 = result_links2 | push: item %}
             {% endif %}
-          {% endfor %}
-          {% for item in result_links1 %}
+            {% endfor %}
+            {% for item in result_links2 %}
             {% assign parts = item | split: '|' %}
             <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
-          {% endfor %}
-        </p>
+            {% endfor %}
+          </p>
+        </div>
       </div>
-      <div class="section-block">
-        <h4>Causal & Explainability</h4>
-        <ul>
-          <li>Counterfactual Reasoning</li>
-          <li>Causal Discovery</li>
-          <li>Interpretable Affective Modeling</li>
-        </ul>
-        <p   class="reference-list">Featured Works: [under review]
-          {% assign target_ids2 = "affective-causal-discovery,beyond-prompts-vega" | split: "," %}
-          {% assign result_links2 = "" | split: "" %}
-          {% for pub in pubs %}
-          {% assign current_id = pub.id %}
-          {% if target_ids2 contains current_id %}
-          {% assign item = forloop.index | append: '|' | append: current_id %}
-          {% assign result_links2 = result_links2 | push: item %}
-          {% endif %}
-          {% endfor %}
-          {% for item in result_links2 %}
-          {% assign parts = item | split: '|' %}
-          <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
-          {% endfor %}
-        </p>
-      </div>
-    </div>
-    <div class="grid-item">
-      <h3>Multimodal Learning</h3>
-      <div class="section-block">
-        <h4>VLMS</h4>
-        <ul>
-          <li>Representation Learning</li>
-          <li>Prompt Learning</li>
-          <li>Visual-Language Alignment</li>
-        </ul>
-        <p class="reference-list">Featured Works:
-          {% assign target_ids1 = "cognitive-priors-multitask,beyond-prompts-vega,grounding-emotion-recognition,unified-affective-mtl" | split: "," %}
-          {% assign pubs = site.data.publications %}
-          {% assign result_links1 = "" | split: "" %}
-          {% for pub in pubs %}
+      <div id="multimodal-learning" class="grid-item node child">
+        <h3>Multimodal Learning</h3>
+        <div class="section-block">
+          <h4>Vision–Language Models (VLMs)</h4>
+          <ul>
+            <li>Representation Learning</li>
+            <li>Prompt Learning</li>
+            <li>Visual-Language Alignment</li>
+          </ul>
+          <p class="reference-list">Featured Works:
+            {% assign target_ids1 = "cognitive-priors-multitask,beyond-prompts-vega,grounding-emotion-recognition,unified-affective-mtl" | split: "," %}
+            {% assign pubs = site.data.publications %}
+            {% assign result_links1 = "" | split: "" %}
+            {% for pub in pubs %}
+              {% assign current_id = pub.id %}
+              {% if target_ids1 contains current_id %}
+                {% assign item = forloop.index | append: '|' | append: current_id %}
+                {% assign result_links1 = result_links1 | push: item %}
+              {% endif %}
+            {% endfor %}
+            {% for item in result_links1 %}
+              {% assign parts = item | split: '|' %}
+              <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          </p>
+        </div>
+        <div class="section-block">
+          <h4>Fusion & Alignment</h4>
+          <ul>
+            <li>Audio–Visual–Language Fusion</li>
+            <li>Prototype-Based Multimodal Representation Clustering</li>
+            <li>Body–Facial Behavior Fusion</li>
+          </ul>
+          <p  class="reference-list">Featured Works:
+            {% assign target_ids2 = "grounding-emotion-recognition,emotions-to-violence-abaw9,abaw8-workshop,video-emotion-facial-body,msrf-graph-emotion,avda-feature-fusion" | split: "," %}
+            {% assign result_links2 = "" | split: "" %}
+            {% for pub in pubs %}
             {% assign current_id = pub.id %}
-            {% if target_ids1 contains current_id %}
-              {% assign item = forloop.index | append: '|' | append: current_id %}
-              {% assign result_links1 = result_links1 | push: item %}
+            {% if target_ids2 contains current_id %}
+            {% assign item = forloop.index | append: '|' | append: current_id %}
+            {% assign result_links2 = result_links2 | push: item %}
             {% endif %}
-          {% endfor %}
-          {% for item in result_links1 %}
+            {% endfor %}
+            {% for item in result_links2 %}
             {% assign parts = item | split: '|' %}
             <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
-          {% endfor %}
-        </p>
+            {% endfor %}
+          </p>
+        </div>
       </div>
-      <div class="section-block">
-        <h4>Multimodal Fusion & Alignment</h4>
-        <ul>
-          <li>Audio, Visual & Language</li>
-          <li>Prototype-based multimodal representation learning</li>
-          <li>Body–Facial Behavior Fusion</li>
-        </ul>
-        <p  class="reference-list">Featured Works:
-          {% assign target_ids2 = "grounding-emotion-recognition,emotions-to-violence-abaw9,abaw8-workshop,video-emotion-facial-body,msrf-graph-emotion,avda-feature-fusion" | split: "," %}
-          {% assign result_links2 = "" | split: "" %}
-          {% for pub in pubs %}
-          {% assign current_id = pub.id %}
-          {% if target_ids2 contains current_id %}
-          {% assign item = forloop.index | append: '|' | append: current_id %}
-          {% assign result_links2 = result_links2 | push: item %}
-          {% endif %}
-          {% endfor %}
-          {% for item in result_links2 %}
-          {% assign parts = item | split: '|' %}
-          <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
-          {% endfor %}
-        </p>
-      </div>
-    </div>
-    <div class="grid-item">
-      <h3>Behavior Generation</h3>
-      <div class="section-block">
-        <h4>Talking Head Generation</h4>
-        <ul>
-          <li>StyleGAN, Diffusion, NeRF</li>
-          <li>Controllable Facial and Head Motion Transfer</li>
-          <li>Multi-view and identity-preserving generation</li>
-        </ul>
-        <p  class="reference-list">Featured Works:
-          <a href="#nerf">[Second Prize]</a>
-        </p>
-      </div>
-      <div class="section-block">
-        <h4>Reaction Generation</h4>
-        <ul>
-          <li>Generation of Facial Reactions to Stimuli</li>
-          <li>Personalized and Affect-aware Response</li>
-        </ul>
-        <p  class="reference-list">Featured Works:
-          {% assign target_ids2 = "robust-reaction-generation" | split: "," %}
-          {% assign result_links2 = "" | split: "" %}
-          {% for pub in pubs %}
-          {% assign current_id = pub.id %}
-          {% if target_ids2 contains current_id %}
-          {% assign item = forloop.index | append: '|' | append: current_id %}
-          {% assign result_links2 = result_links2 | push: item %}
-          {% endif %}
-          {% endfor %}
-          {% for item in result_links2 %}
-          {% assign parts = item | split: '|' %}
-          <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
-          {% endfor %}
-        </p>
+      <div id="behavior-generation" class="grid-item node child">
+        <h3>Behavior Generation</h3>
+        <div class="section-block">
+          <h4>Talking Head Generation</h4>
+          <ul>
+            <li>StyleGAN, Diffusion, NeRF</li>
+            <li>Controllable Facial & Head Motion Transfer</li>
+            <li>Multi-View & Identity-Preserving Generation</li>
+          </ul>
+          <p  class="reference-list">Featured Works:
+            <a href="#nerf">[Second Prize]</a>
+          </p>
+        </div>
+        <div class="section-block">
+          <h4>Reaction Generation</h4>
+          <ul>
+            <li>Stimuli-Driven Generation</li>
+            <li>Emotion-Aware Generation</li>
+          </ul>
+          <p  class="reference-list">Featured Works:
+            {% assign target_ids2 = "robust-reaction-generation" | split: "," %}
+            {% assign result_links2 = "" | split: "" %}
+            {% for pub in pubs %}
+            {% assign current_id = pub.id %}
+            {% if target_ids2 contains current_id %}
+            {% assign item = forloop.index | append: '|' | append: current_id %}
+            {% assign result_links2 = result_links2 | push: item %}
+            {% endif %}
+            {% endfor %}
+            {% for item in result_links2 %}
+            {% assign parts = item | split: '|' %}
+            <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -228,7 +236,7 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
 
 - *2025.07*: &nbsp; 🎉 One conference paper accepted at **ACM MM 2025** !
 - *2025.07*: &nbsp; 📢 Our work presented at
-  the [BMVA Symposium on AI Security](https://www.bmva.org/meetings/25-07-16-AISecurity.html) !
+  the **[BMVA Symposium on AI Security](https://www.bmva.org/meetings/25-07-16-AISecurity.html)** !
 - *2025.06*: &nbsp; 👨‍💻 Served as **Program Chair, Session Chair** & **Data Chair** of
   the _9th ABAW Workshop and Competition_ at **[ICCV 2025](https://affective-behavior-analysis-in-the-wild.github.io/9th/)** !
 - *2025.04*: &nbsp; 🎉 One journal paper accepted
@@ -238,7 +246,7 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
 - *2024.08*: &nbsp; 🏆 Honored with the **Best Reviewed Paper Award** at **IEEE FG 2024** !
 - *2024.08*: &nbsp; 🎉 One conference paper accepted at [**IEEE IJCB 2024**](https://ieeexplore.ieee.org/document/10744499) !
 - *2024.08*: &nbsp; 🎉 Two workshop papers accepted at **ECCV 2024**
-  [[1]](https://dl.acm.org/doi/10.1007/978-3-031-91581-9_3) [[2]](https://dl.acm.org/doi/10.1007/978-3-031-91581-9_1) !
+  **[[1]](https://dl.acm.org/doi/10.1007/978-3-031-91581-9_3)** **[[2]](https://dl.acm.org/doi/10.1007/978-3-031-91581-9_1)** !
 - *2024.05*: &nbsp; 👨‍💻 Served as **Program Chair, Session Chair** & **Data Chair** of
   the _7th ABAW Workshop and Competition_ at **[ECCV 2024](https://affective-behavior-analysis-in-the-wild.github.io/7th/index.html)** !
 - *2025.07*: &nbsp; 🎉 One journal paper accepted at **[JAMIA 2025](https://academic.oup.com/jamia/article/31/11/2749/7755392)** !

@@ -567,6 +567,12 @@ a {
   }
 }
 
+.intro{
+  p{
+    margin: 0 0 0.5em !important;
+  }
+}
+
 .research-grid {
   margin-top: 2rem;
 
@@ -657,6 +663,120 @@ a {
   }
 }
 
+.research-tree {
+  margin: 2.5rem 0 0;
+
+  .tree {
+    display: grid;
+    justify-items: center;
+    row-gap: 0.6rem;
+  }
+
+  .node {
+    transition: all 0.2s ease;
+  }
+
+  .root {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.2;
+    padding: 0.5rem 4rem;
+    /* border: 1px solid #1a3c8c; */
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #494e52;
+    background: #f0f4ff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+
+    &:hover {
+      background: #f0f4ff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+      transform: scale(1.005);
+    }
+  }
+
+  .connectors {
+    position: relative;
+    height: 18px;
+    width: 2px;
+  }
+
+  .v-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 2px;
+    background: currentColor;
+    opacity: 0.28;
+    border-radius: 2px;
+  }
+
+  /* 直接让 grid-item 成为 child 节点 */
+  .grid-container {
+    position: relative;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+
+    /* 横向连接线 */
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 6%;
+      right: 6%;
+      height: 2px;
+      background: currentColor;
+      opacity: 0.22;
+      border-radius: 2px;
+    }
+  }
+
+  .grid-item.node.child {
+    position: relative;
+
+    /* 竖向小线 */
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 10px;
+      width: 2px;
+      background: currentColor;
+      opacity: 0.22;
+      border-radius: 2px;
+    }
+  }
+
+  /* 响应式与原 grid 保持一致 */
+  @media screen and (max-width: 800px) {
+    .grid-container {
+      grid-template-columns: repeat(2, minmax(150px, 1fr));
+
+      &::before {
+        left: 10%;
+        right: 10%;
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+
+      &::before {
+        display: none;
+      }
+    }
+    .grid-item.node.child::before {
+      height: 12px;
+      top: -12px;
+      opacity: 0.3;
+    }
+  }
+}
 
 .awards-section {
   margin-top: 1rem;
@@ -814,6 +934,6 @@ p {
 
 .research-highlight {
   font-weight: 600;
-  color: #1a3c8c; /* 可以换成你网站主题色 */
+  color: #494e52; /* 可以换成你网站主题色 */
   font-style: italic;
 }
