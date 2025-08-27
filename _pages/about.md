@@ -70,9 +70,9 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
             </p>
         </div>
         <div class="section-block">
-          <h4>Multi-Task Modeling</h4>
+          <h4>Multi-Task Learning</h4>
           <ul>
-            <li>Unified Affective Analysis Framework</li>
+            <li>Unified Affective MTL Analysis Framework</li>
             <li>Shared Representation Learning & Task-Specific Adaptation</li>
           </ul>
           <p class="reference-list">Featured Works:
@@ -99,7 +99,7 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
           <ul>
             <li>Fair & Consistent Analysis</li>
             <li>Domain-Generalized & Bias-Resilient Modeling</li>
-            <li>Fairness in Continuous Tasks</li>
+            <li>Fairness in MTL</li>
           </ul>
           <p  class="reference-list">Featured Works:
             {% assign target_ids1 = "fair-domain-generalization,fairness-protocol-tbiom,demographically-aware-benchmark,bridging-fair-affect,recruitment" | split: "," %}
@@ -121,9 +121,9 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
         <div class="section-block">
           <h4>Causality & Explainability</h4>
           <ul>
-            <li>Counterfactual Reasoning</li>
             <li>Causal Discovery</li>
-            <li>Interpretable Affective Modeling</li>
+            <li>Counterfactual Intervention </li>
+            <li>Human-Aligned Causality</li>
           </ul>
           <p   class="reference-list">Featured Works: [under review]
             {% assign target_ids2 = "affective-causal-discovery,beyond-prompts-vega" | split: "," %}
@@ -169,7 +169,7 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
           </p>
         </div>
         <div class="section-block">
-          <h4>Fusion & Alignment</h4>
+          <h4>MM Fusion & Alignment</h4>
           <ul>
             <li>Audio–Visual–Language Fusion</li>
             <li>Prototype-Based Multimodal Representation Clustering</li>
