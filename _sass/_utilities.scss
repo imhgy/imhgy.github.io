@@ -723,7 +723,6 @@ a {
   .grid-container {
     position: relative;
     grid-template-columns: repeat(3, minmax(150px, 1fr));
-
     /* 横向连接线 */
     &::before {
       content: "";
