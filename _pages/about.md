@@ -20,40 +20,38 @@ and Prof. [Siyang Song](https://hbuglab.com/people.html).
 I am a **final-year Ph.D. candidate** at _Xi’an Jiaotong University_, supervised by Prof. [Xinyu Yang](https://gr.xjtu.edu.cn/web/xyyang). From 2023 to 2024, I was a **visiting researcher** at _Queen
 Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](https://sites.google.com/view/dimitrioskollias).
 
-<span style="color: #ea1c25; font-weight: bold;">🔥 I’m currently open to industry and postdoctoral opportunities starting in 2025/2026 — feel free to reach out!</span>
+<span style="color: #ea1c25; font-weight: bold;">🔥 I’m currently open to industry or postdoctoral opportunities starting in 2025/2026 — feel free to reach out!</span>
 
 # 🎯 Research Interests
 
 <div class="intro">
   <p>
     My research focuses on 
-    <span class="research-highlight">affective analysis and generation</span>, 
-    encompassing <span class="research-highlight">multimodal & multi-task perception, fair & interpretable modeling, and emotion-controllable behavior synthesis</span>
-  </p>
-  <p>
-    The ultimate goal is to pioneer human-computer interaction systems characterized by <span class="research-highlight">accurate, fair, and transparent</span> affective understanding,
-    while manifesting <span class="research-highlight">empathetic, engaging, and sophisticatedly nuanced</span> expression capabilities spanning visual, linguistic, and vocal modalities.
+    <span class="research-highlight">Affective Analysis and Generation</span>, 
+    encompassing <u><span class="research-highlight">Multimodal & Multitask Perception, Fair & Interpretable Modeling, and Emotion-controllable Facial Generation.</span></u>
+    The ultimate goal is to achieve human-computer interaction systems endowed with <span class="research-highlight">accurate, fair, and interpretable</span> affective understanding,
+    while exhibiting <span class="research-highlight">empathetic, engaging, and nuanced</span> behaviors through full-spectrum interactions, including auditory, visual, linguistic, and action-based modalities.
   </p>
 </div>
 
 
 <section class="research-tree research-grid" aria-label="Affective Computing">
   <div class="tree">
-    <a class="node root">Affective<br>Analysis & Generation</a>
+    <a class="node root">Affective Analysis & Generation</a>
     <div class="connectors"><span class="v-line"></span></div>
     <div class="grid-container">
       <div id="affective-analysis" class="grid-item node child">
-        <h3>Affective Perception</h3>
+        <h3>Multimodel & Multitask</h3>
         <div class="section-block">
-            <h4>Facial & Body Analysis</h4>
+            <h4>Multi-model Modeling</h4>
             <ul>
-              <li>Expressions Recognition</li>
-              <li>Action-Unit (AU) Detection</li>
-              <li>Valence-Arousal (VA) Estimation</li>
-              <li>Gesture & Pose Analysis</li>
+              <li>Vision–Language Models (VLMs)</li>
+              <li>Audio–Visual–Language Fusion</li>
+              <li>Multimodel Prototype Alignment</li>
+              <li>Domain Adaptation Fusion</li>
             </ul>
             <p class="reference-list">Featured Works:
-              {% assign target_ids1 = "cognitive-priors-multitask,unified-affective-mtl,emotions-to-violence-abaw9,beyond-prompts-vega,abaw8-workshop,abaw7-competition,abaw6-competition,avda-feature-fusion" | split: "," %}
+              {% assign target_ids1 = "beyond-prompts-vega,abaw8-workshop,abaw7-competition,abaw6-competition,avda-feature-fusion,cognitive-priors-multitask,grounding-emotion-recognition,unified-affective-mtl" | split: "," %}
               {% assign pubs = site.data.publications %}
               {% assign result_links1 = "" | split: "" %}
               {% for pub in pubs %}
@@ -73,10 +71,12 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
           <h4>Multi-Task Learning</h4>
           <ul>
             <li>Unified Affective MTL Analysis Framework</li>
+            <li>Expression, AU, VA, Gesture and Pose</li>
+            <li>Multitask Prototype Clustering</li>
             <li>Shared Representation Learning & Task-Specific Adaptation</li>
           </ul>
-          <p class="reference-list">Featured Works:
-            {% assign target_ids2 = "beyond-prompts-vega,cognitive-priors-multitask,abaw7-competition" | split: "," %}
+          <p class="reference-list">Featured Works: [ICLR under review],
+            {% assign target_ids2 = "beyond-prompts-vega,cognitive-priors-multitask,unified-affective-mtl,abaw7-competition" | split: "," %}
             {% assign result_links2 = "" | split: "" %}
             {% for pub in pubs %}
             {% assign current_id = pub.id %}
@@ -99,7 +99,7 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
           <ul>
             <li>Fair & Consistent Analysis</li>
             <li>Domain-Generalized & Bias-Resilient Modeling</li>
-            <li>Fairness in MTL</li>
+            <li>Fairness-aware Multi-task optimization</li>
           </ul>
           <p  class="reference-list">Featured Works:
             {% assign target_ids1 = "fair-domain-generalization,fairness-protocol-tbiom,demographically-aware-benchmark,bridging-fair-affect,recruitment" | split: "," %}
@@ -124,8 +124,9 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
             <li>Causal Discovery</li>
             <li>Counterfactual Intervention </li>
             <li>Human-Aligned Causality</li>
+            <li>Visual Prototype Leaning</li>
           </ul>
-          <p   class="reference-list">Featured Works: [under review]
+          <p   class="reference-list">Featured Works: [AAAI under review], [NeurIPS under review]
             {% assign target_ids2 = "affective-causal-discovery,beyond-prompts-vega" | split: "," %}
             {% assign result_links2 = "" | split: "" %}
             {% for pub in pubs %}
@@ -142,63 +143,14 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
           </p>
         </div>
       </div>
-      <div id="multimodal-learning" class="grid-item node child">
-        <h3>Multimodal Learning</h3>
-        <div class="section-block">
-          <h4>Vision–Language Models (VLMs)</h4>
-          <ul>
-            <li>Representation Learning</li>
-            <li>Prompt Learning</li>
-            <li>Visual-Language Alignment</li>
-          </ul>
-          <p class="reference-list">Featured Works:
-            {% assign target_ids1 = "cognitive-priors-multitask,beyond-prompts-vega,grounding-emotion-recognition,unified-affective-mtl" | split: "," %}
-            {% assign pubs = site.data.publications %}
-            {% assign result_links1 = "" | split: "" %}
-            {% for pub in pubs %}
-              {% assign current_id = pub.id %}
-              {% if target_ids1 contains current_id %}
-                {% assign item = forloop.index | append: '|' | append: current_id %}
-                {% assign result_links1 = result_links1 | push: item %}
-              {% endif %}
-            {% endfor %}
-            {% for item in result_links1 %}
-              {% assign parts = item | split: '|' %}
-              <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
-            {% endfor %}
-          </p>
-        </div>
-        <div class="section-block">
-          <h4>MM Fusion & Alignment</h4>
-          <ul>
-            <li>Audio–Visual–Language Fusion</li>
-            <li>Prototype-Based Multimodal Representation Clustering</li>
-            <li>Body–Facial Behavior Fusion</li>
-          </ul>
-          <p  class="reference-list">Featured Works:
-            {% assign target_ids2 = "grounding-emotion-recognition,emotions-to-violence-abaw9,abaw8-workshop,video-emotion-facial-body,msrf-graph-emotion,avda-feature-fusion" | split: "," %}
-            {% assign result_links2 = "" | split: "" %}
-            {% for pub in pubs %}
-            {% assign current_id = pub.id %}
-            {% if target_ids2 contains current_id %}
-            {% assign item = forloop.index | append: '|' | append: current_id %}
-            {% assign result_links2 = result_links2 | push: item %}
-            {% endif %}
-            {% endfor %}
-            {% for item in result_links2 %}
-            {% assign parts = item | split: '|' %}
-            <a href="#{{ parts[1] }}">[{{ parts[0] }}]</a>{% unless forloop.last %}, {% endunless %}
-            {% endfor %}
-          </p>
-        </div>
-      </div>
       <div id="behavior-generation" class="grid-item node child">
-        <h3>Behavior Generation</h3>
+        <h3>Facial Generation</h3>
         <div class="section-block">
           <h4>Talking Head Generation</h4>
           <ul>
-            <li>StyleGAN, Diffusion, NeRF</li>
-            <li>Controllable Facial & Head Motion Transfer</li>
+            <li>StyleGAN, Diffusion, NeRF Modeling</li>
+            <li>Emotion-Controllable Generation</li>
+            <li>Identity-aware Facial Motion Style Leaning and Transfer</li>
             <li>Multi-View & Identity-Preserving Generation</li>
           </ul>
           <p  class="reference-list">Featured Works:
@@ -209,7 +161,8 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
           <h4>Reaction Generation</h4>
           <ul>
             <li>Stimuli-Driven Generation</li>
-            <li>Emotion-Aware Generation</li>
+            <li>Emotion Aware and Controllable</li>
+            <li>Semantic-Aligned Reaction</li>
           </ul>
           <p  class="reference-list">Featured Works:
             {% assign target_ids2 = "robust-reaction-generation" | split: "," %}

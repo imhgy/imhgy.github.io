@@ -489,7 +489,7 @@ a {
   border-radius: 12px;
   padding: 0.6rem;
   background: #f9f9fc;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 2px rgba(0,0,0,0.08);
   transition: all 0.2s ease;
 
   @include breakpoint(max-width 600px) {
@@ -579,14 +579,14 @@ a {
   .grid-container {
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
+    gap: 4rem;
   }
 
   .grid-item {
     padding: 0rem 0.4rem 1rem 0.4rem;
     border-radius: 8px;
     background: #f9f9fc;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 3px rgba(0,0,0,0.1);
     transition: all 0.2s ease;
     display: flex;
     flex-direction: column;
@@ -601,11 +601,15 @@ a {
       flex: 1;
       display: flex;
       flex-direction: column;
+
+      p {
+        text-align: left;
+      }
     }
 
     .reference-list {
       color: #1a3c8c;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       margin-top: 0.2rem;
 
       a {
@@ -615,7 +619,7 @@ a {
     }
 
     p {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       font-weight: 600;
       padding-left: 10px;
       color: #6d6d6d;
@@ -630,13 +634,14 @@ a {
 
     h3 {
       color: #494e52;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 600;
       text-align: center;
+      margin: 1em 0 0 0;
     }
 
     h4 {
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 600;
       color: #494e52;
       margin-bottom: 0.4rem;
@@ -664,12 +669,12 @@ a {
 }
 
 .research-tree {
-  margin: 2.5rem 0 0;
+  margin: 1.5rem 0 0;
 
   .tree {
     display: grid;
     justify-items: center;
-    row-gap: 0.6rem;
+    //row-gap: 0.6rem;
   }
 
   .node {
@@ -681,14 +686,14 @@ a {
     text-align: center;
     vertical-align: middle;
     line-height: 1.2;
-    padding: 0.5rem 4rem;
+    padding: 0.7rem 2rem;
     /* border: 1px solid #1a3c8c; */
     border-radius: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #494e52;
     background: #f0f4ff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.16);
 
     &:hover {
       background: #f0f4ff;
@@ -699,7 +704,7 @@ a {
 
   .connectors {
     position: relative;
-    height: 18px;
+    height: 29px;
     width: 2px;
   }
 
@@ -717,13 +722,13 @@ a {
   /* 直接让 grid-item 成为 child 节点 */
   .grid-container {
     position: relative;
-    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
 
     /* 横向连接线 */
     &::before {
       content: "";
       position: absolute;
-      top: -10px;
+      top: -15px;
       left: 6%;
       right: 6%;
       height: 2px;
@@ -740,10 +745,10 @@ a {
     &::before {
       content: "";
       position: absolute;
-      top: -10px;
+      top: -15px;
       left: 50%;
       transform: translateX(-50%);
-      height: 10px;
+      height: 15px;
       width: 2px;
       background: currentColor;
       opacity: 0.22;
