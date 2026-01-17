@@ -17,38 +17,36 @@ In parallel, I also a **Research Associate** at the _University of Exeter_, focu
 Analysis*, in collaboration with Prof. [Zeyu Fu](https://zeyufu.github.io/)
 and Prof. [Siyang Song](https://hbuglab.com/people.html).
 
-I am a **final-year Ph.D. candidate** at _Xi’an Jiaotong University_, supervised by Prof. [Xinyu Yang](https://gr.xjtu.edu.cn/web/xyyang). From 2023 to 2024, I was a **visiting researcher** at _Queen
+I am a **final-year Ph.D. candidate (Viva expected: Feb. 2026)** at _Xi’an Jiaotong University_, supervised by Prof. [Xinyu Yang](https://gr.xjtu.edu.cn/web/xyyang). From 2023 to 2024, I was a **visiting researcher** at _Queen
 Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](https://sites.google.com/view/dimitrioskollias).
 
-<span style="color: #ea1c25; font-weight: bold;">🔥 I’m currently open to industry or postdoctoral opportunities starting in 2025/2026 — feel free to reach out!</span>
+<span style="color: #ea1c25; font-weight: bold;">🔥 I’m currently open to postdoctoral opportunities starting in 2026 — feel free to reach out!</span>
 
 # 🎯 Research Interests
 
 <div class="intro">
   <p>
     My research focuses on 
-    <span class="research-highlight">Affective Analysis and Generation</span>, 
-    encompassing <u><span class="research-highlight">Multimodal & Multitask Perception, Fair & Interpretable Modeling, and Emotion-controllable Facial Generation.</span></u>
-    The ultimate goal is to achieve human-computer interaction systems endowed with <span class="research-highlight">accurate, fair, and interpretable</span> affective understanding,
-    while exhibiting <span class="research-highlight">empathetic, engaging, and nuanced</span> behaviors through full-spectrum interactions, including auditory, visual, linguistic, and action-based modalities.
+    <span class="research-highlight">Affective Computing (Interpretable, Multimodal & Multi-task, Facial Generation) and Trustworthy AI (Fairness, Accountability, Transparency & Ethics)</span>.
+    Emphasising an interdisciplinary synthesis spanning information science, cognitive psychology, and sociology, I aim to build human-centred AI by developing advanced computational methods that are principled in interpretable, fairness, robustness, and ethical accountability.
   </p>
 </div>
 
 
 <section class="research-tree research-grid" aria-label="Affective Computing">
   <div class="tree">
-    <a class="node root">Affective Analysis & Generation</a>
+    <a class="node root">Research Interests</a>
     <div class="connectors"><span class="v-line"></span></div>
     <div class="grid-container">
       <div id="affective-analysis" class="grid-item node child">
-        <h3>Multimodel & Multitask</h3>
+        <h3>Multimodel & Multi-task</h3>
         <div class="section-block">
             <h4>Multi-model Modeling</h4>
             <ul>
               <li>Vision–Language Models (VLMs)</li>
-              <li>Audio–Visual–Language Fusion</li>
-              <li>Multimodel Prototype Alignment</li>
-              <li>Domain Adaptation Fusion</li>
+              <li>Interpretable Representation Learning</li>
+              <li>Cognitive-aligned Alignment</li>
+              <li>Domain Adaptation & Domain Generation</li>
             </ul>
             <p class="reference-list">Featured Works:
               {% assign target_ids1 = "beyond-prompts-vega,abaw8-workshop,abaw7-competition,abaw6-competition,avda-feature-fusion,cognitive-priors-multitask,grounding-emotion-recognition,unified-affective-mtl" | split: "," %}
@@ -70,10 +68,10 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
         <div class="section-block">
           <h4>Multi-Task Learning</h4>
           <ul>
-            <li>Unified Affective MTL Analysis Framework</li>
-            <li>Expression, AU, VA, Gesture and Pose</li>
-            <li>Multitask Prototype Clustering</li>
-            <li>Shared Representation Learning & Task-Specific Adaptation</li>
+            <li>Unified Multi-task Affective Analysis</li>
+            <li>Expression, AU, VA and Pose Gesture</li>
+            <li>Cognitive and Semantic Aligned Learning</li>
+            <li>Pareto Optimization</li>
           </ul>
           <p class="reference-list">Featured Works: [ICLR under review],
             {% assign target_ids2 = "beyond-prompts-vega,cognitive-priors-multitask,unified-affective-mtl,abaw7-competition" | split: "," %}
@@ -102,7 +100,7 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
             <li>Fairness-aware Multi-task optimization</li>
           </ul>
           <p  class="reference-list">Featured Works:
-            {% assign target_ids1 = "fair-domain-generalization,fairness-protocol-tbiom,demographically-aware-benchmark,bridging-fair-affect,recruitment" | split: "," %}
+            {% assign target_ids1 = "fair-domain-generalization1,fairness-protocol-tbiom,demographically-aware-benchmark,bridging-fair-affect,recruitment" | split: "," %}
             {% assign pubs = site.data.publications %}
             {% assign result_links1 = "" | split: "" %}
             {% for pub in pubs %}
@@ -181,13 +179,18 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
           </p>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
 # ✨ News
 
-- *2025.07*: &nbsp; 🎉 One conference paper accepted at **ACM MM 2025** !
+- *2026.01*: &nbsp; 🎉 I passed my PhD thesis examination with a **full innovation score** of 100/100 !
+- *2025.11*: &nbsp; 🎉 One conference papers accepted at **AAAI 2026 (Oral)** !
+- *2025.11*: &nbsp; 🎉 One conference papers accepted at **WACV 2026** !
+- *2025.08*: &nbsp; 👨‍💻 Served as **Program Committee** of 33rd International Conference on Artificial Intelligence and Cognitive Science (AICS 2025) !
+- *2025.07*: &nbsp; 🎉 One conference paper accepted at **ACM MM 2025 (Oral)** !
 - *2025.07*: &nbsp; 📢 Our work presented at
   the **[BMVA Symposium on AI Security](https://www.bmva.org/meetings/25-07-16-AISecurity.html)** !
 - *2025.06*: &nbsp; 👨‍💻 Served as **Program Chair, Session Chair** & **Data Chair** of
@@ -259,10 +262,12 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
       <em>Bridging the Gap: Protocol Towards Fair and Consistent Affect Analysis.</em>
     </li>
     <li>
-      <strong>💰 Innovative Talents International Cooperative Training Project Scholarship</strong> | 2023
+      <strong>💰 Innovative Leading Talents Scholarship </strong> | 2023
       <em>Fully-funded one-year overseas research visit.</em>
     </li>
     <li><strong>💰 Academic Scholarship</strong> | 2023 | Xi’an Jiaotong University</li>
+    <li><strong>🎖️ Outstanding Student Leader</strong> | 2023 | Xi’an Jiaotong University</li>
+    <li><strong>🎖️ Outstanding Student</strong> | 2022 | Xi’an Jiaotong University</li>
     <li>
       <div class="anchor-offset" id="nerf"></div>
       <strong>🏆 Second Prize</strong> | 2022 | China National Radio and Television Administration
@@ -273,19 +278,6 @@ Mary University of London_, under the supervision of Prof. [Dimitrios Kollias](h
       <strong>🏆 Excellence Award</strong> ``| 2022 | China National Radio and Television Administration
       <em>New Video Technology Application Innovation Competition</em>
       <span class="award-project">Intelligent Media Activation System for Video Scenarios in the Petrochemical Industry.</span>
-    </li>
-    <li><strong>🎖️ Outstanding Student Cadre</strong> | 2022, 2023 | Xi’an Jiaotong University</li>
-    <li><strong>🎖️ Outstanding Student</strong> | 2022, 2023 | Xi’an Jiaotong University</li>
-    <li><strong>🎖️ Outstanding Student Scholarship</strong> | 2023 | Xi’an Jiaotong University</li>
-    <li>
-      <strong>🏆 Second Prize</strong> | 2021 | China National Radio and Television Administration
-      <em>Artificial Intelligence Application Innovation Competition</em>
-      <span class="award-project">Audio-Visual Content Editing AI Platform Based on “Silk Road Cloud”.</span>
-    </li>
-    <li>
-      <strong>🏆 Second Prize</strong> | 2021 | China National Radio and Television Administration
-      <em>New Video Technology Application Innovation Competition</em>
-      <span class="award-project">Ultra-HD Program Intelligent Production Project Based on Multimodal Fusion.</span>
     </li>
     <li><strong>💰 National Encouragement Scholarship</strong> | 2016 | China Ministry of Education (MoE)</li>
   </ul>

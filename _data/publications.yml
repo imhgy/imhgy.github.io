@@ -1,7 +1,39 @@
+
+
+- id: fairmt
+  title: "FairMT: Fairness for Heterogeneous Multi-task Learning."
+  authors: "<span class=\"highlight\">Guanyu Hu</span>, Tangzheng Lian, Na Yan, Dimitrios Kollias, Xinyu Yang, Oya Celiktutan, Siyang Song, Zeyu Fu"
+  venue: CVPR 2026 under review
+  url: https://arxiv.org/pdf/2512.00469
+
+- id: causalaffect
+  title: "Causalaffect: Causal Discovery for Facial Affective Understanding."
+  authors: "<span class=\"highlight\">Guanyu Hu</span>, Tangzheng Lian, Dimitrios Kollias, Oya Celiktutan, Xinyu Yang"
+  venue: ICLR 2026 under review
+  url: https://arxiv.org/pdf/2512.00456
+
+- id: aura
+  title: "AURA: Visually Interpretable Affective Understanding via Robust Archetypes."
+  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, and Xinyu Yang"
+  venue: ICLR 2026 under review
+  url: http://www.guanyuhu.com/
+
+- id: cognitive-priors-multitask
+  title: "From Cognitive Priors to Instance Semantics: A Unified Framework for Multi-task Affective Computing."
+  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, and Xinyu Yang"
+  venue: WACV 2026
+  url: http://www.guanyuhu.com/
+
+- id: fair-domain-generalization1
+  title: "Fair Domain Generalization: An Information-Theoretic View."
+  authors: "Lian Tangzheng, <span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, Xinyu Yang, and Oya Celiktutan."
+  venue: AAAI 2026 (Oral)
+  url: https://www.arxiv.org/abs/2507.05823
+
 - id: grounding-emotion-recognition
   title: "Grounding Emotion Recognition with Visual Prototypes: VEGA - Revisiting CLIP in MERC."
   authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, Xinyu Yang"
-  venue: ACM MM 2025
+  venue: ACM MM 2025 (Oral)
   url: https://arxiv.org/abs/2508.06564
 
 #- id: beyond-prompts-vega
@@ -10,17 +42,6 @@
 #  venue: AAAI 2026 (Under Review)
 #  url: http://www.guanyuhu.com/
 
-- id: fair-domain-generalization
-  title: "Fair Domain Generalization: An Information-Theoretic View."
-  authors: "Lian Tangzheng, <span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, Xinyu Yang, and Oya Celiktutan"
-  venue: AAAI 2026 (Under Review)
-  url: https://www.arxiv.org/abs/2507.05823
-
-#- id: cognitive-priors-multitask
-#  title: "From Cognitive Priors to Instance Semantics: A Unified Framework for Multi-task Affective Computing."
-#  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, and Xinyu Yang"
-#  venue: WACV 2026 (Under Review)
-#  url: http://www.guanyuhu.com/
 
 - id: fairness-protocol-tbiom
   title: "Rethinking Affect Analysis: A Protocol for Ensuring Fairness and Consistency."
@@ -40,17 +61,17 @@
 #  venue: NeurIPS 2025 (Under Review)
 #  url: http://www.guanyuhu.com/
 
-- id: demographically-aware-benchmark
-  title: "A Demographically-Aware Benchmarking Framework for Affective Analysis."
-  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, and Xinyu Yang"
-  venue: IEEE TAFFC 2025 (Under Review)
-  url: http://www.guanyuhu.com/
+#- id: demographically-aware-benchmark
+#  title: "A Demographically-Aware Benchmarking Framework for Affective Analysis."
+#  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, and Xinyu Yang"
+#  venue: IEEE TAFFC 2025 (Under Review)
+#  url: http://www.guanyuhu.com/
 
-- id: unified-affective-mtl
-  title: "Toward Unified Affective Multitask Learning via Cross-Task Distillation and Semantically-Informed Prompting."
-  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, and Xinyu Yang"
-  venue: IEEE TIP 2025 (Under Review)
-  url: http://www.guanyuhu.com/
+#- id: unified-affective-mtl
+#  title: "Toward Unified Affective Multitask Learning via Cross-Task Distillation and Semantically-Informed Prompting."
+#  authors: "<span class=\"highlight\">Guanyu Hu</span>, Dimitrios Kollias, and Xinyu Yang"
+#  venue: IEEE TIP 2025 (Under Review)
+#  url: http://www.guanyuhu.com/
 
 - id: abaw8-workshop
   title: "Advancements in Affective and Behavior Analysis: The 8th ABAW Workshop and Competition."
