@@ -8,7 +8,8 @@ html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
   background-color: $background-color;
-  font-size: 15px;
+  // Keep the base scale relative to the browser text-size preference.
+  font-size: ($doc-font-size / 16) * 100%;
 
   // @include breakpoint($medium) {
   //   font-size: 18px;

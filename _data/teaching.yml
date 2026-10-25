@@ -1,0 +1,57 @@
+---
+courses:
+- name: Data Mining
+  code: ECS607U
+  role: Teaching Assistant
+  institution: Queen Mary University of London
+  years:
+  - 2023
+  - 2024
+  - 2025
+  period: 2023–2025
+- name: Graph Theory and Applications
+  code: '052130'
+  role: Teaching Assistant
+  institution: Xi’an Jiaotong University
+  years:
+  - 2020
+  - 2021
+  - 2022
+  period: 2020–2022
+- name: Advanced Network Programming
+  code: EBU5042
+  role: Assistant Examiner
+  institution: Queen Mary University of London
+  years:
+  - 2024
+  - 2025
+  period: 2024–2025
+- name: Middleware
+  code: EBU6501
+  role: Assistant Examiner
+  institution: Queen Mary University of London
+  years:
+  - 2024
+  - 2025
+  period: 2024–2025
+- name: Software Engineering
+  code: EBU6304
+  role: Assistant Examiner
+  institution: Queen Mary University of London
+  years:
+  - 2024
+  period: '2024'
+- name: Communications Systems
+  code: ECS528U
+  role: Assistant Examiner
+  institution: Queen Mary University of London
+  years:
+  - 2024
+  period: '2024'
+- name: Programming Fundamentals for Engineers
+  code: ECS429U
+  role: Assistant Examiner
+  institution: Queen Mary University of London
+  years:
+  - 2024
+  period: '2024'

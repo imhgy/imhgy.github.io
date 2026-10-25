@@ -1,0 +1,48 @@
+.page__content .news-list {
+  font-size: $font-size-body;
+  line-height: $line-height-body;
+  color: $text-color;
+
+  ul {
+    margin: 0 0 $space-xl;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: grid;
+    grid-template-columns: 4.4rem minmax(0, 1fr);
+    column-gap: $space-sm;
+    align-items: baseline;
+    margin: 0 0 $space-sm;
+  }
+
+  time {
+    color: $secondary-text-color;
+    font-size: $font-size-supporting;
+    font-weight: $font-weight-regular;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .news-body {
+    min-width: 0;
+    overflow-wrap: break-word;
+  }
+
+  strong,
+  a {
+    font-weight: $font-weight-medium;
+  }
+
+  .achievement-highlight {
+    color: $achievement-color;
+    font-weight: $font-weight-semibold;
+  }
+
+  .achievement-highlight.news-rate {
+    font-size: inherit;
+    font-weight: $font-weight-medium;
+  }
+}

@@ -10,23 +10,24 @@
 
         <div class="author__content">
             <h3 class="author__name">{{ author.name }}</h3>
-            <p class="author__university">Research Associate @ QMUL</p>
-            <p class="author__bio">Ph.D. Candidate @ XJTU</p>
+            <p class="author__university">HIIT Postdoctoral Fellow</p>
+            <p class="author__bio">Aalto University</p>
+            <p class="author__email">{{ author.email | replace: '@', ' AT ' }}</p>
             <div class="author__icons_sm">
                 <ul class="social-icons-sm">
-                    <li><a href="mailto:{{ author.email }}"><i class="fas fa-envelope" style="color: #D14836;"></i></a>
+                    <li><a href="mailto:{{ author.email }}" aria-label="Email"><i aria-hidden="true" class="fas fa-envelope" style="color: #D14836;"></i></a>
                     </li>
                     <li><a href="https://scholar.google.com/citations?user=AxO-zOEAAAAJ&hl=en"><img
-                            src="https://scholar.google.com/favicon.ico"/></a></li>
-                    <li><a href="{{ author.researchgate }}"><i class="fab fa-researchgate"
+                            src="https://scholar.google.com/favicon.ico" alt="Google Scholar"/></a></li>
+                    <li><a href="{{ author.researchgate }}" aria-label="ResearchGate"><i aria-hidden="true" class="fab fa-researchgate"
                                                                style="color:#00CCBB;"></i></a>
                     </li>
                     <li><a href="https://www.linkedin.com/in/guanyu-hu-09839a361/"><img
-                            src="https://www.linkedin.com/favicon.ico"/></a></li>
-                    <li><a href="https://dblp.org/pid/172/3540-3.html"><img src="https://dblp.org/img/favicon.ico"/></a>
+                            src="https://www.linkedin.com/favicon.ico" alt="LinkedIn"/></a></li>
+                    <li><a href="https://dblp.org/pid/172/3540-3.html"><img src="{{ '/images/dblp.ico' | relative_url }}" alt="DBLP"/></a>
                     </li>
 <!--                    <li><a href="https://github.com/imhgy"><img src="https://github.com/favicon.ico"/></a></li>-->
-                    <li><a href="https://orcid.org/0009-0006-1911-6283"><img src="https://orcid.org/favicon.ico"/></a>
+                    <li><a href="https://orcid.org/0009-0006-1911-6283"><img src="https://orcid.org/favicon.ico" alt="ORCID"/></a>
                     </li>
                 </ul>
             </div>
@@ -36,30 +37,30 @@
             <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
             <ul class="author__urls social-icons">
                 <li>
-                    <a href="mailto:{{ author.email }}" title="Email" style="color: #D14836">
-                        <i class="fas fa-envelope"></i>
+                    <a href="mailto:{{ author.email }}" aria-label="Email" title="Email" style="color: #D14836">
+                        <i aria-hidden="true" class="fas fa-envelope"></i>
                     </a>
                 </li>
                 <li>
                     <a href="https://scholar.google.com/citations?user=AxO-zOEAAAAJ&hl=en" title="Google Scholar"
                        style="width:1em">
-                        <img src="https://scholar.google.com/favicon.ico"/>
+                        <img src="https://scholar.google.com/favicon.ico" alt="Google Scholar"/>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ author.researchgate }}">
+                    <a href="{{ author.researchgate }}" aria-label="ResearchGate">
                         <i class="fab fa-fw fa-researchgate" aria-hidden="true" title="ResearchGate"
                            style="width:1em;color:#00CCBB"></i>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/guanyu-hu-09839a361/" title="LinkedIn" style="width:1em">
-                        <img src="https://www.linkedin.com/favicon.ico"/>
+                        <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn"/>
                     </a>
                 </li>
                 <li>
                     <a href="https://dblp.org/pid/172/3540-3.html" title="DBLP" style="width:1em">
-                        <img src="https://dblp.org/img/favicon.ico"/>
+                        <img src="{{ '/images/dblp.ico' | relative_url }}" alt="DBLP"/>
                     </a>
                 </li>
 <!--                <li>-->
@@ -69,7 +70,7 @@
 <!--                </li>-->
                 <li>
                     <a href="https://orcid.org/0009-0006-1911-6283" title="ORCID" style="width:1em">
-                        <img src="https://orcid.org/favicon.ico"/>
+                        <img src="https://orcid.org/favicon.ico" alt="ORCID"/>
                     </a>
                 </li>
             </ul>
@@ -77,30 +78,30 @@
             <div class="author__urls_sm">
                 <ul class="author__urls social-icons">
                     <li>
-                        <a href="mailto:{{ author.email }}" title="Email" style="color: #D14836">
-                            <i class="fas fa-envelope"></i>
+                        <a href="mailto:{{ author.email }}" aria-label="Email" title="Email" style="color: #D14836">
+                            <i aria-hidden="true" class="fas fa-envelope"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://scholar.google.com/citations?user=AxO-zOEAAAAJ&hl=en" title="Google Scholar"
                            style="width:1em">
-                            <img src="https://scholar.google.com/favicon.ico"/>
+                            <img src="https://scholar.google.com/favicon.ico" alt="Google Scholar"/>
                         </a>
                     </li>
                     <li>
-                        <a href="{{ author.researchgate }}">
+                        <a href="{{ author.researchgate }}" aria-label="ResearchGate">
                             <i class="fab fa-fw fa-researchgate" aria-hidden="true" title="ResearchGate"
                                style="width:1em;color:#00CCBB"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/guanyu-hu-09839a361/" title="LinkedIn" style="width:1em">
-                            <img src="https://www.linkedin.com/favicon.ico"/>
+                            <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn"/>
                         </a>
                     </li>
                     <li>
                         <a href="https://dblp.org/pid/172/3540-3.html" title="DBLP" style="width:1em">
-                            <img src="https://dblp.org/img/favicon.ico"/>
+                            <img src="{{ '/images/dblp.ico' | relative_url }}" alt="DBLP"/>
                         </a>
                     </li>
 <!--                    <li>-->
@@ -110,7 +111,7 @@
 <!--                    </li>-->
                     <li>
                         <a href="https://orcid.org/0009-0006-1911-6283" title="ORCID" style="width:1em">
-                            <img src="https://orcid.org/favicon.ico"/>
+                            <img src="https://orcid.org/favicon.ico" alt="ORCID"/>
                         </a>
                     </li>
                 </ul>

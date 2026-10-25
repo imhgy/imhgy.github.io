@@ -6,7 +6,7 @@
    Typography
    ========================================================================== */
 
-$doc-font-size              : 14;
+$doc-font-size              : 16;
 
 /* paragraph indention */
 $paragraph-indent           : false; // true, false (default)
@@ -14,11 +14,33 @@ $indent-var                 : 0.5em;
 
 /* system typefaces */
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : "Trebuchet MS", Helvetica, sans-serif; // "Trebuchet MS",
+$sans-serif                 : -apple-system, BlinkMacSystemFont, system-ui, "PingFang SC", sans-serif;
  //$sans-serif                 : Georgia, serif, sans-serif;
 
 // $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
+
+$font-weight-regular        : 400;
+$font-weight-medium         : 500;
+$font-weight-semibold       : 600;
+
+/* Shared page roles: body, compact records, supporting text, and small labels. */
+$font-size-section          : 1.5rem;
+$font-size-subheading       : 1.125rem;
+$font-size-body             : 1rem;
+$font-size-compact          : 0.9375rem;
+$font-size-supporting       : 0.875rem;
+$font-size-caption          : 0.8125rem;
+$font-size-label            : 0.75rem;
+$line-height-body           : 1.65;
+$line-height-ui             : 1.5;
+$space-xs                   : 0.25rem;
+$space-sm                   : 0.5rem;
+$space-md                   : 1rem;
+$space-lg                   : 1.5rem;
+$space-xl                   : 2rem;
+$panel-padding              : 1.25rem 1.5rem;
+$panel-radius               : 12px;
 
 /* sans serif typefaces */
 $sans-serif-narrow          : $sans-serif;
@@ -33,7 +55,7 @@ $garamond                   : Garamond, serif;
 
 $global-font-family         : $sans-serif;
 $header-font-family         : $sans-serif;
-$caption-font-family        : $serif;
+$caption-font-family        : $sans-serif;
 
 /* type scale */
 $type-size-1                : 2.441em;  // ~39.056px
@@ -60,8 +82,17 @@ $body-color                 : #fff;
 $background-color           : #fff;
 $code-background-color      : #fafafa;
 $code-background-color-dark : $light-gray;
-$text-color                 : $dark-gray;
+$text-color                 : #000000;
+$secondary-text-color       : #6e6e73;
 $border-color               : $lighter-gray;
+$divider-color              : #c7c7cc;
+$panel-background           : #f9f9fc;
+$link-background            : #edf5ff;
+$link-background-hover      : #e1efff;
+$achievement-color          : #d70015;
+$achievement-background     : #fff0f1;
+$committee-pc-color         : #24599a;
+$committee-tpc-color        : #7052a3;
 
 $primary-color              : #7a8288;
 $success-color              : #62c462;
@@ -94,11 +125,11 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : $info-color;
+$link-color                 : #0066cc;
 $link-color-hover           : mix(#000, $link-color, 25%);
-$link-color-visited         : mix(#fff, $link-color, 25%);
-$masthead-link-color        : $primary-color;
-$masthead-link-color-hover  : mix(#000, $primary-color, 25%);
+$link-color-visited         : $link-color;
+$masthead-link-color        : $text-color;
+$masthead-link-color-hover  : $text-color;
 
 
 /*
@@ -154,4 +185,4 @@ $border-radius              : 4px;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
 $navicon-width              : 28px;
 $navicon-height             : 4px;
-$global-transition          : all 0.2s ease-in-out;
+$global-transition          : color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out, transform 0.2s ease-in-out;

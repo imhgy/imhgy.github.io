@@ -15,6 +15,11 @@ main:
   - title: "Awards"
     url: "/#-honors-and-awards"
 
+  - title: "Service"
+    url: "/#-academic-service"
+
+  - title: "Teaching"
+    url: "/#-teaching-experience"
+
   - title: "Patents"
     url: "/#-patents"
-

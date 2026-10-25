@@ -13,7 +13,8 @@ body {
   padding-bottom: 0em;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-body;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -23,9 +24,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 0.5em;
-  line-height: 1.2;
+  line-height: 1.25;
   font-family: $header-font-family;
-  font-weight: bold;
+  font-weight: $font-weight-semibold;
+}
+
+strong, b {
+  font-weight: $font-weight-medium;
 }
 
 h1 {
@@ -162,7 +167,7 @@ hr {
   display: block;
   margin: 1em 0;
   border: 0;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid $divider-color;
 }
 
 /* lists */

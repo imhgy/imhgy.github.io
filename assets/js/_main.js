@@ -57,8 +57,15 @@ $(document).ready(function(){
     $(".author__urls-wrapper button").toggleClass("open");
   });
 
-  // init smooth scroll
-  $("a").smoothScroll({offset: -20});
+  // Use CSS scroll margins for headings, keeping legacy offsets for other anchors.
+  $("a").smoothScroll({
+    offset: -20,
+    beforeScroll: function(options) {
+      var target = $(options.scrollTarget)[0];
+      var margin = parseFloat(window.getComputedStyle(target).scrollMarginTop);
+      if (margin) options.offset = -margin;
+    }
+  });
 
   // add lightbox class to all image links
   $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");

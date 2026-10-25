@@ -468,7 +468,26 @@ a.reversefootnote {
    Required
    ========================================================================== */
 a {
-  color: #1a3c8c;
+  color: $link-color;
+  font-weight: $font-weight-regular;
+  text-decoration: none;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.16em;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $link-color;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+a:not([href]) {
+  text-decoration: none;
 }
 
 .required {
@@ -483,405 +502,704 @@ a {
   visibility: hidden;
 }
 
-.publication-card {
-  margin: 0 auto 1rem;
-  width: 95%;
-  border-radius: 12px;
-  padding: 0.6rem;
-  background: #f9f9fc;
-  box-shadow: 0 2px 2px rgba(0,0,0,0.08);
-  transition: all 0.2s ease;
+.page__content .achievement-highlight {
+  color: $achievement-color;
+  font-weight: $font-weight-semibold;
+}
 
-  @include breakpoint(max-width 600px) {
-    padding: 0.8rem 0.6rem 0.6rem 0rem;
-    width: 100%;
+.page__content .research-records {
+  margin: $space-md 0 $space-xl;
+
+  .research-record {
+    display: grid;
+    grid-template-columns: 8.75rem minmax(0, 1fr);
+    column-gap: 0.625rem;
+    margin: 0 0 $space-lg;
+    min-width: 0;
+
+    &:last-child { margin-bottom: 0; }
   }
 
-  &:hover {
-    background: #f0f4ff;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
-    transform: scale(1.005);
-    transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  &.publications .research-record {
+    grid-template-columns: 9rem minmax(0, 1fr);
+    column-gap: 0.5rem;
   }
 
-  .highlight {
-    font-weight: bold;
-    color: #1a3c8c;
+  .record-meta {
+    min-width: 0;
+    font-size: $font-size-body;
+    line-height: $line-height-ui;
   }
 
-  .pub-title {
+  .record-venue-line,
+  .record-year-line {
     display: flex;
-    align-items: flex-start;
-    font-weight: 600;
-    font-size: 1.05rem;
-    margin-bottom: 0.4rem;
-    line-height: 1.4;
-    gap: 0.5rem; // 可选，控制编号和标题之间的间距
-    word-break: break-word; // 保证长标题自动换行
+    align-items: baseline;
+    gap: 0.375rem;
+    white-space: nowrap;
 
-    .pub-index {
-      flex-shrink: 0;
-      width: 2em; // 保证无论是一位还是两位数字都宽度一致
-      text-align: right;
-      color: #494e52;
-      font-weight: 600;
-      margin-right: 0.4rem;
+    .record-year { margin-top: 0; }
+  }
+
+  .record-year-line {
+    margin-top: 0.15rem;
+
+    .record-distinction {
+      margin-top: 0;
+      padding: 0.0625rem 0.25rem;
+      border-radius: $border-radius;
+      background: $achievement-background;
+    }
+  }
+
+  .record-venue {
+    display: block;
+    color: $text-color;
+    font-weight: $font-weight-semibold;
+  }
+
+  .record-year, .record-number {
+    display: block;
+    margin-top: 0.15rem;
+    color: $secondary-text-color;
+    font-size: $font-size-supporting;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-ui;
+  }
+
+  .record-number {
+    font-size: $font-size-caption;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .record-distinction {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: $font-size-caption;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-ui;
+  }
+
+  &.patents {
+    .research-record { align-items: baseline; }
+
+    .record-number {
+      margin-top: 0;
+      color: $text-color;
+      font-weight: $font-weight-semibold;
+    }
+  }
+
+  .record-content { min-width: 0; }
+
+  .record-title {
+    margin: 0;
+    color: $text-color;
+    font-size: $font-size-body;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-ui;
+    text-wrap: pretty;
+
+    a {
+      color: $link-color;
+      text-decoration: none;
+
+      &:hover { text-decoration: underline; }
+    }
+  }
+
+  .record-authors {
+    margin: 0.25rem 0 0;
+    color: $secondary-text-color;
+    font-size: $font-size-supporting;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-ui;
+
+    .highlight {
+      color: $text-color;
+      font-weight: $font-weight-semibold;
+      white-space: nowrap;
+    }
+
+    .authors-toggle {
+      min-width: 1.5rem;
+      margin: 0 0.15rem;
+      padding: 0 0.25rem;
+      border: 0;
+      border-radius: $border-radius;
+      background: $link-background;
+      color: $link-color;
+      font: inherit;
+      font-weight: $font-weight-semibold;
+      line-height: 1.25;
+      vertical-align: baseline;
+      cursor: pointer;
+
+      &:hover { background: $link-background-hover; }
+      &:focus-visible {
+        outline: 2px solid $link-color;
+        outline-offset: 2px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .research-record,
+    &.publications .research-record {
+      grid-template-columns: minmax(0, 1fr);
+      row-gap: $space-sm;
+    }
+
+    .record-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: $space-xs $space-sm;
+    }
+
+    .record-year-line { margin-top: 0; }
+    .record-authors .authors-toggle {
+      min-width: 28px;
+      min-height: 24px;
+      line-height: $line-height-ui;
+    }
+  }
+
+}
+
+.page__content .research-interests {
+  display: block;
+  margin: 1rem 0 1.5rem;
+
+  .research-theme {
+    display: grid;
+    grid-template-columns: 140px minmax(0, 1fr);
+    column-gap: 1.75rem;
+    min-width: 0;
+
+    & + .research-theme {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid $divider-color;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: $font-weight-semibold;
+    line-height: 1.15;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 2px;
+      margin-bottom: 0.6rem;
+      background: $link-color;
+    }
+  }
+
+  .research-topics {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem 1.5rem;
+    min-width: 0;
+  }
+
+  .research-topic {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    row-gap: 0;
+    min-width: 0;
+
+    > * {
+      align-self: start;
+    }
+  }
+
+  #affective-analysis .research-topic:last-child {
+    grid-column: 1 / -1;
+
+    .research-description {
+      max-width: calc((100% - 1.5rem) / 2);
+    }
+  }
+
+  h3 {
+    margin: 0 0 0.25rem;
+    font-size: $font-size-body;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-ui;
+  }
+
+  p.research-description {
+    margin: 0 0 $space-sm;
+    color: $secondary-text-color;
+    font-size: $font-size-supporting;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-ui;
+  }
+
+  .research-works {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      font-size: $font-size-supporting;
+      font-weight: $font-weight-regular;
+      line-height: $line-height-ui;
     }
 
     a {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: $border-radius;
+      background: $link-background;
+      color: $link-color;
       text-decoration: none;
-      color: #494e52;
 
       &:hover {
-        text-decoration: underline;
+        background: $link-background-hover;
       }
     }
   }
 
-  .pub-authors,
-  .pub-venue {
-    margin-left: 3.3em; // 与标题对齐（和 .pub-index 宽度一致）
-    font-size: 0.92rem;
-    font-style: italic;
-    color: #333;
+  // The narrower desktop container needs its own reading layout.
+  @media screen and (max-width: #{$x-large - 1px}) {
+    .research-theme {
+      grid-template-columns: minmax(0, 1fr);
+      row-gap: 0.75rem;
+    }
 
-    @include breakpoint(max-width 600px) {
-      margin-left: 2.9rem;
-      font-size: 0.88rem;
+    #affective-analysis .research-topic:last-child .research-description {
+      max-width: 36rem;
     }
   }
 
-  .pub-authors {
-    margin-bottom: 0.3rem;
-  }
-
-  .pub-venue {
-    font-weight: bold;
-    color: #666;
-    text-decoration: underline;
-
-    .pub-arxiv {
-      margin-left: 0.5rem;
-      color: #888;
+  @media screen and (max-width: 700px) {
+    .research-topics {
+      grid-template-columns: minmax(0, 1fr);
+      gap: $space-lg;
     }
+
+    .research-topic {
+      display: block;
+      grid-row: auto;
+    }
+
+    #affective-analysis .research-topic:last-child .research-description {
+      max-width: none;
+    }
+
+    .research-works a { padding: $space-xs $space-sm; }
   }
 }
 
-.intro {
-  p {
-    margin: 0 0 0.5em !important;
+.page__content .academic-service {
+  margin: 1rem 0 2rem;
+
+  .service-group + .service-group { margin-top: 1.5rem; }
+
+  h2 {
+    margin: 0 0 0.75rem;
+    font-size: $font-size-subheading;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-ui;
   }
-}
 
-.research-grid {
-  margin-top: 2rem;
+  .service-intro {
+    margin: -0.25rem 0 0.9rem;
+    color: $secondary-text-color;
+    font-size: $font-size-supporting;
+    line-height: $line-height-ui;
+  }
 
-  .grid-container {
+  .service-year-group {
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
-    gap: 4rem;
-  }
+    grid-template-columns: 3.75rem minmax(0, 1fr);
+    gap: 0.4rem 1.25rem;
 
-  .grid-item {
-    padding: 0rem 0.4rem 1rem 0.4rem;
-    border-radius: 8px;
-    background: #f9f9fc;
-    box-shadow: 0 4px 3px rgba(0,0,0,0.1);
-    transition: all 0.2s ease;
-    display: flex;
-    flex-direction: column;
-    height: 100%; // 保证高度撑满（如果需要）
-
-    @media screen and (min-width: 768px) {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-
-    .section-block {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-
-      p {
-        text-align: left;
-      }
-    }
-
-    .reference-list {
-      color: #1a3c8c;
-      font-size: 0.7rem;
-      margin-top: 0.2rem;
-
-      a {
-        text-decoration: underline;
-        color: #1a3c8c;
-      }
-    }
-
-    p {
-      font-size: 0.7rem;
-      font-weight: 600;
-      padding-left: 10px;
-      color: #6d6d6d;
-      margin: 0;
-    }
-
-    &:hover {
-      background: #f0f4ff;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
-      transform: scale(1.005);
-    }
+    + .service-year-group { margin-top: 1rem; }
 
     h3 {
-      color: #494e52;
-      font-size: 1.05rem;
-      font-weight: 600;
-      text-align: center;
-      margin: 1em 0 0 0;
-    }
-
-    h4 {
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: #494e52;
-      margin-bottom: 0.4rem;
-      border-left: 3px solid #0056d6;
-      padding-left: 0.5rem;
-    }
-
-    ul {
       margin: 0;
-      padding-left: 1.4rem;
+      font-size: $font-size-body;
+      line-height: $line-height-ui;
+      font-weight: $font-weight-semibold;
+      font-variant-numeric: tabular-nums;
+    }
+  }
+
+  .service-organisations {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.3rem 1.75rem;
+  }
+
+  .service-year-group--organisation {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: subgrid;
+    grid-row: span 7;
+    min-width: 0;
+
+    + .service-year-group { margin-top: 0; }
+
+    h3 {
+      margin-bottom: 0.45rem;
+      font-size: $font-size-subheading;
+    }
+  }
+
+  .service-records {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .service-records--organisation {
+    display: contents;
+
+    li {
+      display: grid;
+      grid-template-rows: subgrid;
+      grid-row: span 3;
+      min-width: 0;
+      margin: 0;
+
+      + li { margin-top: 1rem; }
+    }
+
+    a {
+      align-self: center;
+      font-size: $font-size-body;
+      font-weight: $font-weight-medium;
+      line-height: $line-height-ui;
+      text-decoration: none;
+
+      &:hover { text-decoration: underline; }
+    }
+  }
+
+  .service-edition {
+    color: $text-color;
+    font-size: 1.0625rem;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-ui;
+  }
+
+  .service-event-title {
+    margin: 0;
+    text-wrap: pretty;
+  }
+
+  .service-role {
+    margin: 0;
+    color: $text-color;
+    font-size: $font-size-caption;
+    line-height: $line-height-ui;
+  }
+
+  .service-conference-index {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr));
+    gap: 0.6rem 1.25rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: start;
+      align-items: baseline;
+      gap: 0.05rem 0.4rem;
+      min-width: 0;
+      margin: 0;
+      color: $text-color;
+      font-size: $font-size-compact;
+      line-height: $line-height-ui;
+    }
+  }
+
+  .service-conference-index .service-distinction {
+    padding: 0.05rem 0.35rem;
+    border-radius: $border-radius;
+    background: $achievement-background;
+    font-size: $font-size-caption;
+    line-height: $line-height-ui;
+  }
+
+  .service-committee-role {
+    color: $text-color;
+    font-size: $font-size-label;
+    font-weight: $font-weight-medium;
+  }
+
+  .service-committee-role--reviewer { color: $secondary-text-color; }
+  .service-committee-role--pc { color: $committee-pc-color; }
+  .service-committee-role--tpc { color: $committee-tpc-color; }
+
+  @media screen and (min-width: 701px) {
+    .service-conference-index [data-service-role*="Technical Program Committee"],
+    .service-conference-index [data-service-name="ACM Multimedia"][data-service-role*="Program Committee"] {
+      grid-column: span 2;
+      flex-wrap: nowrap;
+    }
+  }
+
+  .service-journals {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem 3rem;
+    margin: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      border-left: 1px solid $divider-color;
+    }
+
+    > div {
+      display: grid;
+      grid-template-columns: 3.75rem minmax(0, 1fr);
+      gap: 0 0.75rem;
+      align-items: baseline;
+      min-width: 0;
+    }
+
+    dt, dd {
+      margin: 0;
+      color: $text-color;
+      font-size: $font-size-supporting;
+      line-height: $line-height-ui;
+    }
+
+    dt { font-weight: $font-weight-semibold; }
+    dd { text-wrap: balance; }
+
+    [data-journal="TAFFC"] dd { max-width: 12rem; }
+    [data-journal="BSPC"] dd { max-width: 14rem; }
+    [data-journal="IVC"] dd { max-width: 9rem; }
+  }
+
+  @media screen and (max-width: #{$x-large - 1px}) {
+    .service-organisations {
+      grid-template-columns: minmax(0, 1fr);
+      gap: $space-lg;
+    }
+
+    .service-year-group--organisation {
+      grid-row: auto;
+      grid-template-rows: none;
+      row-gap: 0.75rem;
+
+      h3 { margin-bottom: 0; }
+    }
+
+    .service-records--organisation {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: $space-md;
 
       li {
-        font-size: 0.8rem;
-        font-weight: 600;
-        color: #6d6d6d;
-        list-style: disc;
-        margin: 0;
+        grid-row: auto;
+        grid-template-rows: auto minmax(0, 1fr) auto;
+        gap: $space-xs;
 
-        &::marker {
-          color: #1a3c8c;
-        }
+        + li { margin-top: 0; }
       }
     }
+
+    .service-conference-index {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      [data-service-name="ACM Multimedia"][data-service-role*="Program Committee"] {
+        grid-column: auto;
+        flex-wrap: wrap;
+      }
+    }
+
+    .service-journals {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0.75rem;
+
+      &::before { display: none; }
+      [data-journal] dd { max-width: none; }
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .service-records--organisation {
+      grid-template-columns: minmax(0, 1fr);
+      gap: $space-lg;
+
+      li { display: block; }
+      .service-edition,
+      .service-event-title { display: block; }
+      .service-event-title,
+      .service-role { margin-top: $space-xs; }
+    }
+
+    .service-year-group--conference-index {
+      grid-template-columns: minmax(0, 1fr);
+      gap: $space-sm;
+    }
+
+    .service-conference-index {
+      grid-template-columns: minmax(0, 1fr);
+
+      li { font-size: $font-size-body; }
+    }
+
+    .service-committee-role { font-size: $font-size-caption; }
+    .service-journals dt,
+    .service-journals dd { font-size: $font-size-compact; }
   }
 }
 
-.research-tree {
-  margin: 1.5rem 0 0;
+.page__content .teaching-experience {
+  margin: 1rem 0 2rem;
 
-  .tree {
-    display: grid;
-    justify-items: center;
-    //row-gap: 0.6rem;
+  .teaching-role-group {
+    + .teaching-role-group { margin-top: $space-lg; }
+
+    > h2 {
+      margin: 0 0 0.75rem;
+      font-size: $font-size-subheading;
+      line-height: $line-height-ui;
+      font-weight: $font-weight-semibold;
+    }
   }
 
-  .node {
-    transition: all 0.2s ease;
+  .teaching-institution-group {
+    min-width: 0;
+
+    + .teaching-institution-group { margin-top: 0.85rem; }
+
+    &[data-institution="Queen Mary University of London"] h3 { color: $committee-pc-color; }
+    &[data-institution="Xi’an Jiaotong University"] h3 { color: $committee-tpc-color; }
+
+    h3 {
+      margin: 0 0 0.4rem;
+      color: $secondary-text-color;
+      font-size: $font-size-supporting;
+      line-height: $line-height-ui;
+      font-weight: $font-weight-regular;
+    }
   }
 
-  .root {
+  .teaching-courses {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.25rem 1rem;
+      margin: 0;
+      padding: 0.25rem 0;
+      font-size: $font-size-body;
+      line-height: $line-height-ui;
+    }
+  }
+
+  .teaching-course-name { min-width: 0; }
+
+  .teaching-code {
     display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 1.2;
-    padding: 0.7rem 2rem;
-    /* border: 1px solid #1a3c8c; */
-    border-radius: 10px;
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: #494e52;
-    background: #f0f4ff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.16);
+    margin-left: 0.4rem;
+    color: $secondary-text-color;
+    font-size: $font-size-supporting;
+  }
 
-    &:hover {
-      background: #f0f4ff;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
-      transform: scale(1.005);
+  .teaching-years {
+    flex-shrink: 0;
+    color: $secondary-text-color;
+    font-size: $font-size-supporting;
+    font-variant-numeric: tabular-nums;
+  }
+
+  @media screen and (max-width: 700px) {
+    .teaching-courses li {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: $space-xs 0.75rem;
+      align-items: start;
+      padding: 0.375rem 0;
     }
-  }
 
-  .connectors {
-    position: relative;
-    height: 29px;
-    width: 2px;
-  }
-
-  .v-line {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 100%;
-    width: 2px;
-    background: currentColor;
-    opacity: 0.28;
-    border-radius: 2px;
-  }
-
-  /* 直接让 grid-item 成为 child 节点 */
-  .grid-container {
-    position: relative;
-    grid-template-columns: repeat(3, minmax(150px, 1fr));
-
-    /* 横向连接线 */
-    &::before {
-      content: "";
-      position: absolute;
-      top: -15px;
-      left: 6%;
-      right: 6%;
-      height: 2px;
-      background: currentColor;
-      opacity: 0.22;
-      border-radius: 2px;
+    .teaching-code {
+      display: block;
+      margin-left: 0;
     }
+
+    .teaching-years { line-height: 24px; }
   }
-
-  .grid-item.node.child {
-    position: relative;
-
-    /* 竖向小线 */
-    &::before {
-      content: "";
-      position: absolute;
-      top: -15px;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 15px;
-      width: 2px;
-      background: currentColor;
-      opacity: 0.22;
-      border-radius: 2px;
-    }
-  }
-
-  /* 响应式与原 grid 保持一致 */
-  @media screen and (max-width: 800px) {
-    .grid-container {
-      grid-template-columns: repeat(2, minmax(150px, 1fr));
-
-      &::before {
-        left: 10%;
-        right: 10%;
-      }
-    }
-  }
-
-  /* 手机保持两列，超小屏再单列 */
-  @media screen and (max-width: 480px) {
-    .grid-container {
-      grid-template-columns: repeat(2, minmax(150px, 1fr));
-
-      &::before {
-        display: none;
-      }
-    }
-    .grid-item.node.child::before {
-      height: 12px;
-      top: -12px;
-      opacity: 0.3;
-    }
-  }
-
-  /* 超小屏 <360px 才单列 */
-  @media screen and (max-width: 360px) {
-    .grid-container {
-      grid-template-columns: 1fr;
-    }
-  }
-
 
 }
 
-.awards-section {
-  margin-top: 1rem;
-  margin-left: 10px;
-  width: 95%;
-  border-radius: 12px;
-  padding: 1rem 1rem 0.6rem 0.5rem;
-  margin-bottom: 1rem;
-  background: #f9f9fc;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  transition: all 0.2s ease;
-
-  @include breakpoint($large) {
-    padding: 1rem 1rem 0.6rem 1rem;
-  }
-
-
-}
-
-.awards-section h2 {
-  font-size: 1.6rem;
-  color: #1a3c8c;
-  margin-bottom: 1rem;
+/* All filled content panels share one surface and the same text inset. */
+.page__content .awards-section,
+.page__content .section-panel,
+.page__content .published-database {
+  width: 100%;
+  margin: 0;
+  padding: $panel-padding;
+  border-radius: $panel-radius;
+  background: $panel-background;
+  box-shadow: none;
+  transition: none;
 }
 
 .award-list {
+  margin: 0;
+  padding-left: 1.25rem;
   list-style: disc;
-  padding-left: 1.5rem;
-  line-height: 1.6;
-}
+  line-height: $line-height-body;
 
-.award-list li {
-  margin-bottom: 1rem;
-}
+  li {
+    margin-bottom: $space-md;
+    &:last-child { margin-bottom: 0; }
+  }
 
-.award-list em {
-  display: block;
-  font-style: italic;
-  color: #666;
-}
-
-.award-project {
-  font-weight: 600;
-  display: block;
-  color: #494e52;
-}
-
-.published-database {
-  margin-top: 1rem;
-  margin-left: 10px;
-  width: 95%;
-  border-radius: 12px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background: #f9f9fc;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  transition: all 0.2s ease;
-}
-
-/* 大屏时设置 padding 为 2rem */
-@media screen and (min-width: 768px) {
-  .published-database {
-    padding: 2rem;
+  em,
+  .award-project {
+    display: block;
+    color: $secondary-text-color;
+    font-size: $font-size-supporting;
+    font-weight: $font-weight-regular;
+    font-style: normal;
+    line-height: $line-height-ui;
   }
 }
-
 
 .section-header {
-  display: flex;
-  align-items: center; // 垂直居中
-  justify-content: space-between; // 两边对齐（h2 左，a 右）
-  flex-wrap: wrap; // 小屏可换行
-  gap: 1rem; // 可选：小屏换行时保持间距
-  margin-bottom: 1rem;
-  margin-top: 0.5em;
-}
-
-@media (max-width: 600px) {
-  .section-header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 12px;
+  margin: 0 0 $space-md;
 }
 
 .section-header h2 {
+  min-width: 0;
   margin: 0;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: $font-size-subheading;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-ui;
 }
 
 h1#code {
@@ -897,7 +1215,7 @@ h1#code > img {
 
 .published-database h1 {
   font-size: 1.8rem;
-  color: #1a3c8c;
+  color: $text-color;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -910,46 +1228,48 @@ h1#code > img {
 }
 
 .published-database p {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  font-size: $font-size-body;
+  color: $text-color;
+  line-height: $line-height-body;
+
+  &:last-child { margin-bottom: 0; }
 }
 
 .published-database strong {
-  color: #494e52;
+  color: $text-color;
 }
 
 .code-link {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 5px 10px;
+  border: 1px solid rgba($link-color, .12);
+  border-radius: 8px;
+  background-color: $link-background;
+  color: $link-color;
+  font-size: 13px;
+  font-weight: $font-weight-medium;
+  line-height: 20px;
   white-space: nowrap;
-  background-color: #1a3c8c;
-  color: #fff;
-  padding: 0.5rem 1rem;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: background-color 0.2s;
-  font-size: 0.95rem;
+  transition: background-color .16s;
 }
 
-.code-link:hover {
-  background-color: #0f2964;
+.code-link:hover,
+.code-link:focus-visible {
+  background-color: $link-background-hover;
+  color: $link-color;
+  text-decoration: none;
 }
 
 p {
-  //margin-bottom: 0.5em;
-  text-align: justify;
+  text-align: left;
 }
 
-.page__content p {
-  margin: 0 0 1em;
-}
-
-.research-highlight {
-  font-weight: 600;
-  color: #494e52; /* 可以换成你网站主题色 */
-  font-style: italic;
-  text-decoration: underline;
+@media screen and (max-width: 700px) {
+  .page__content .awards-section,
+  .page__content .section-panel,
+  .page__content .published-database { padding: $space-md; }
 }

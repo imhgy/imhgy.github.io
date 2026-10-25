@@ -1,0 +1,119 @@
+/* Compact reading rhythm on phones; desktop typography remains unchanged. */
+@media screen and (max-width: 700px) {
+  #main { width: 100%; margin-top: 12px; padding-inline: 16px; }
+  .page, .page__inner-wrap, .page__content { width: 100%; min-width: 0; }
+  .sidebar { padding-top: 0; margin-bottom: 8px; }
+  .profile_inner { width: fit-content; max-width: 100%; margin-inline: auto; gap: 12px; }
+  .author__content { flex: 0 1 auto; }
+  .profile_inner > .author__avatar { flex-basis: clamp(96px, 30vw, 112px); }
+  .author__avatar img { width: clamp(96px, 30vw, 112px); }
+  .sidebar .author__name { font-size: 20px; line-height: 26px; }
+  .sidebar .author__bio, .sidebar .author__university, .sidebar .author__email {
+    font-size: 13px; line-height: 19px;
+  }
+  .sidebar .author__university { margin-top: 4px; }
+  .author__icons_sm { margin-top: 4px; }
+  .author__icons_sm ul.social-icons-sm { gap: 6px; }
+
+  .page__content {
+    font-size: 15px;
+    line-height: 1.55;
+    > h1 { margin-top: 24px; margin-bottom: 12px; padding-bottom: 6px; font-size: 22px; line-height: 28px; }
+    > h1#Hello { margin-top: 8px; }
+    p { margin-bottom: 8px; }
+
+    .news-list {
+      font-size: 15px; line-height: 1.5;
+      ul { margin-bottom: 24px; }
+      li { grid-template-columns: 3.75rem minmax(0, 1fr); column-gap: 8px; margin-bottom: 6px; }
+      time { font-size: 13px; }
+    }
+
+    .research-interests {
+      margin: 12px 0 24px;
+      .research-theme { row-gap: 10px; }
+      .research-theme + .research-theme { margin-top: 16px; padding-top: 12px; }
+      h2 { font-size: 21px; line-height: 25px; }
+      h2::before { margin-bottom: 6px; }
+      h3 { font-size: 15px; line-height: 22px; margin-bottom: 3px; }
+      .research-topics { gap: 16px; }
+      .research-topic {
+        font-size: 13px;
+        line-height: 19.5px;
+        text-align: justify;
+        text-align-last: left;
+        hyphens: auto;
+        hyphenate-limit-chars: 8 3 3;
+      }
+      h3 { text-align: left; }
+      p.research-description { display: inline; font-size: inherit; line-height: inherit; margin: 0; }
+      .research-works { display: inline; margin: 0; padding: 0; font-size: inherit; line-height: inherit; }
+      .research-works li { display: inline; font-size: inherit; line-height: inherit; }
+      .research-works li + li::before { content: " "; }
+      .research-works a {
+        display: inline;
+        margin-inline: 2px;
+        padding: 1px 6px;
+        min-height: 0;
+        border-radius: $border-radius;
+        background: $link-background;
+        font-weight: $font-weight-medium;
+        white-space: normal;
+        hyphens: none;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        &:hover { background: $link-background-hover; }
+      }
+    }
+
+    .research-records {
+      margin: 12px 0 24px;
+      .research-record { margin-bottom: 18px; row-gap: 4px; }
+      .record-meta, .record-title { font-size: 15px; line-height: 22.5px; }
+      .record-content { width: 100%; }
+      .record-title {
+        width: 100%;
+        max-width: none;
+        text-wrap: wrap;
+        text-align: left;
+        text-align-last: auto;
+        hyphens: none;
+      }
+      .record-authors, .record-year { font-size: 13px; line-height: 19.5px; }
+    }
+
+    .awards-section, .section-panel, .published-database { padding: 14px; }
+    .published-database p { font-size: 15px; line-height: 23.25px; }
+    .section-header { margin-bottom: 10px; gap: 8px; }
+    .section-header h2 { font-size: 16px; line-height: 24px; }
+    .award-list { line-height: 1.55; }
+    .award-list li { margin-bottom: 10px; }
+    .award-list em, .award-project { font-size: 13px; line-height: 19.5px; }
+
+    .academic-service {
+      margin: 12px 0 24px;
+      h2 { font-size: 16px; line-height: 24px; margin-bottom: 10px; }
+      .service-intro { font-size: 13px; line-height: 19.5px; margin-bottom: 10px; }
+      .service-group + .service-group { margin-top: 20px; }
+      .service-organisations { gap: 18px; }
+      .service-records--organisation { gap: 16px; }
+      .service-year-group--organisation { row-gap: 10px; }
+      .service-year-group--organisation h3 { font-size: 16px; }
+      .service-edition { font-size: 15px; line-height: 22px; }
+      .service-event-title { font-size: 15px; line-height: 22.5px; }
+      .service-role, .service-committee-role { font-size: 12px; line-height: 18px; }
+      .service-conference-index { gap: 6px; }
+      .service-conference-index li { font-size: 15px; line-height: 22px; }
+      .service-journals { gap: 9px; }
+      .service-journals > div { grid-template-columns: 3.3rem minmax(0, 1fr); gap: 0 10px; }
+      .service-journals dt, .service-journals dd { font-size: 13px; line-height: 19.5px; }
+    }
+
+    .teaching-experience {
+      margin: 12px 0 24px;
+      .teaching-role-group > h2 { font-size: 16px; line-height: 24px; margin-bottom: 10px; }
+      .teaching-institution-group h3, .teaching-code, .teaching-years { font-size: 13px; line-height: 19.5px; }
+      .teaching-courses li { font-size: 15px; line-height: 22.5px; padding: 4px 0; }
+    }
+  }
+}

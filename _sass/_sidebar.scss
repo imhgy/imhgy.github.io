@@ -107,7 +107,9 @@
     padding: 5px;
 
     @include breakpoint($large) {
-      min-width: 160px;
+      width: 160px;
+      min-width: 0;
+      max-width: 100%;
       padding: 5px;
       border: 1px solid #db230054;
     }
@@ -152,11 +154,8 @@
 }
 
 .sidebar .author__name {
-  @include breakpoint($medium) {
-    font-size: $type-size-3;
-  }
   font-family: $sans-serif;
-  font-size: $type-size-4;
+  font-size: 1.5rem;
 }
 
 .author__university {
@@ -165,16 +164,19 @@
 }
 
 .author__bio {
-  margin-bottom: 15px;
+  margin-bottom: 0;
   margin-top: 0;
 }
 
-.author__bio, .author__university {
+.author__email {
+  margin: 0 0 15px;
+}
 
-  p {
-    font-size: 0.99em;
-    line-height: 1;
-  }
+.author__bio, .author__university, .author__email {
+  color: $secondary-text-color;
+  font-size: 0.875rem;
+  font-weight: $font-weight-regular;
+  line-height: 1.5;
 }
 
 .author__urls-wrapper {
@@ -394,4 +396,63 @@
   @include breakpoint(max-width $large - 1px) {
     display: none !important;
   }
+}
+
+@media screen and (max-width: #{$large - 1px}) {
+  .profile_box { padding-left: 0; }
+  .profile_inner {
+    gap: $space-md;
+    max-width: 28rem;
+  }
+
+  .profile_inner > .author__avatar {
+    flex: 0 0 128px;
+    margin: 0;
+  }
+
+  .author__avatar img {
+    width: 128px;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .author__content { min-width: 0; }
+  .sidebar .author__name {
+    margin: 0;
+    text-align: left;
+  }
+
+  .sidebar .author__university,
+  .sidebar .author__bio,
+  .sidebar .author__email {
+    text-align: left;
+    font-size: $font-size-supporting;
+    line-height: $line-height-ui;
+  }
+
+  .sidebar .author__university { margin-top: $space-sm; }
+  .sidebar .author__email { margin-bottom: 0; }
+  .author__icons_sm {
+    margin-top: $space-sm;
+
+    ul.social-icons-sm {
+      justify-content: flex-start;
+      gap: $space-sm;
+
+      a { min-width: 24px; min-height: 24px; }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile_inner > .author__avatar { flex-basis: 112px; }
+  .author__avatar img { width: 112px; }
+}
+
+@media screen and (min-width: #{$large}) and (max-width: #{$x-large - 1px}) {
+  .sidebar .author__name { font-size: 1.375rem; }
+  .sidebar .author__university,
+  .sidebar .author__bio,
+  .sidebar .author__email { font-size: $font-size-supporting; }
 }

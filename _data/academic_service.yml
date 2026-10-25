@@ -1,0 +1,144 @@
+---
+organisation_description: "Held in conjunction with CVPR, ICCV and ECCV, ABAW provides an international forum for advancing multimodal understanding of human affect and behaviour through large-scale benchmarks and shared challenges."
+organisation_roles:
+- Program Chair
+- Session Chair
+- Data Chair
+organisation_years:
+- year: 2026
+  entries:
+  - name: 11th ABAW · ECCV
+    title: "From Complex Behavior to Intelligent Human-Centered AI"
+    focus: "Multi-task affect learning · Ambivalence/hesitancy recognition"
+    url: https://affective-behavior-analysis-in-the-wild.github.io/11th/
+  - name: 10th ABAW · CVPR
+    title: "From Affect to Complex Behavior: Advancing Multimodal Human-centered AI"
+    focus: "Valence–arousal · Expressions & action units · Emotional mimicry · Ambivalence/hesitancy · Fine-grained violence detection"
+    url: https://affective-behavior-analysis-in-the-wild.github.io/10th/
+- year: 2025
+  entries:
+  - name: 9th ABAW · ICCV
+    title: "From Emotions to Violence: Multimodal Fine-Grained Behavior Analysis"
+    focus: "Valence–arousal · Compound expressions · Fine-grained violence detection"
+    url: https://affective-behavior-analysis-in-the-wild.github.io/9th/
+  - name: 8th ABAW · CVPR
+    title: "Advancements in Affective and Behavior Analysis"
+    focus: "Valence–arousal · Expressions & action units · Compound expressions · Emotional mimicry · Ambivalence/hesitancy"
+    url: https://affective-behavior-analysis-in-the-wild.github.io/8th/
+- year: 2024
+  entries:
+  - name: 7th ABAW · ECCV
+    title: "Multi-task Learning and Compound Expression Recognition"
+    focus: "Multi-task affect learning · Compound expression recognition"
+    url: https://affective-behavior-analysis-in-the-wild.github.io/7th/
+  - name: 6th ABAW · CVPR
+    title: "Affective Behavior Analysis in-the-wild"
+    focus: "Valence–arousal · Expressions & action units · Compound expressions · Emotional mimicry"
+    url: https://affective-behavior-analysis-in-the-wild.github.io/6th/
+conference_years:
+- year: 2027
+  entries:
+  - name: ICLR
+    role: Reviewer
+    url: https://iclr.cc/Conferences/2027
+  - name: AAAI
+    role: Program Committee (PC)
+    url: https://aaai.org/conference/aaai/aaai-27/
+- year: 2026
+  entries:
+  - name: NeurIPS
+    role: Reviewer
+    url: https://neurips.cc/Conferences/2026
+    distinction: Top Reviewer
+  - name: ICML
+    role: Reviewer
+    url: https://icml.cc/Conferences/2026/ProgramCommittee
+    distinction: Silver Reviewer
+  - name: ICLR
+    role: Reviewer
+    url: https://iclr.cc/Conferences/2026/ProgramCommittee
+  - name: AAAI
+    role: Program Committee (PC)
+    url: https://aaai.org/conference/aaai/aaai-26/2026-program-committee/
+  - name: CVPR
+    role: Reviewer
+    url: https://cvpr.thecvf.com/Conferences/2026/ProgramCommittee
+  - name: ECCV
+    role: Reviewer
+    url: https://eccv.ecva.net/Conferences/2026/ProgramCommittee
+  - name: WACV
+    role: Reviewer
+    url: https://wacv.thecvf.com/Conferences/2026
+  - name: BMVC
+    role: Reviewer
+  - name: ACM ICMR
+    role: Program Committee (PC)
+    url: https://icmr2026.org/reviewer-guidelines.html
+  - name: ACM Multimedia
+    role: Program Committee (PC)
+- year: 2025
+  entries:
+  - name: CVPR
+    role: Reviewer
+    url: https://cvpr.thecvf.com/Conferences/2025/ProgramCommittee
+  - name: ICCV
+    role: Emergency Reviewer
+    url: https://iccv.thecvf.com/Conferences/2025
+  - name: ACM Multimedia
+    role: Reviewer
+  - name: AICS
+    role: Program Committee (PC)
+  - name: ACM Multimedia Asia
+    role: Technical Program Committee (TPC)
+additional_conferences: []
+# 2025 Journal Impact Factor, released in 2026; checked 2026-10-25. Used only for sorting.
+journal_impact_factor_year: 2025
+journals:
+- name: IEEE Transactions on Pattern Analysis and Machine Intelligence
+  abbreviation: TPAMI
+  role: Reviewer
+  impact_factor: 20.4
+- name: IEEE Transactions on Biometrics, Behavior, and Identity Science
+  abbreviation: TBIOM
+  role: Reviewer
+  impact_factor: 4.4
+- name: ACM Transactions on Multimedia Computing, Communications, and Applications
+  abbreviation: TOMM
+  role: Reviewer
+  impact_factor: 5.6
+- name: IEEE Transactions on Affective Computing
+  abbreviation: TAFFC
+  role: Reviewer
+  impact_factor: 11.3
+- name: IEEE Transactions on Multimedia
+  abbreviation: TMM
+  role: Reviewer
+  impact_factor: 9.9
+- name: International Journal of Computer Vision
+  abbreviation: IJCV
+  role: Reviewer
+  impact_factor: 10.3
+- name: Pattern Recognition
+  abbreviation: PR
+  role: Reviewer
+  impact_factor: 9.1
+- name: Neural Networks
+  abbreviation: NN
+  role: Reviewer
+  impact_factor: 7.2
+- name: Expert Systems with Applications
+  abbreviation: ESWA
+  role: Reviewer
+  impact_factor: 9.4
+- name: Image and Vision Computing
+  abbreviation: IVC
+  role: Reviewer
+  impact_factor: 5.0
+- name: Biomedical Signal Processing and Control
+  abbreviation: BSPC
+  role: Reviewer
+  impact_factor: 5.7
+- name: Applied Soft Computing
+  abbreviation: ASOC
+  role: Reviewer
+  impact_factor: 7.8
