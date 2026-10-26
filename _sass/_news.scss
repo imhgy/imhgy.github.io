@@ -15,6 +15,10 @@
     column-gap: $space-sm;
     align-items: baseline;
     margin: 0 0 $space-sm;
+
+    > p {
+      margin: 0;
+    }
   }
 
   time {
