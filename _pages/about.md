@@ -10,7 +10,7 @@ redirect_from:
 
 <h1 id="Hello" style="margin-top: 1rem">👋 Hi!</h1>
 
-I am a [**HIIT Postdoctoral Research Fellow**](https://www.hiit.fi/) at **Aalto University** and am also affiliated with [**ELLIS Institute Finland**](https://www.ellisinstitute.fi/), working with Prof. [Guoying Zhao](https://gyzhao-nm.github.io/Guoying/) and Prof. [Juho Kannala](https://users.aalto.fi/~kannalj1/). I received my **Ph.D. from Xi’an Jiaotong University**, supervised by Prof. [Xinyu Yang](https://gr.xjtu.edu.cn/xyyang/en/index.htm). Previously, I spent three years at **Queen Mary University of London**, where I worked as a **Research Associate** with Prof. [Dimitrios Kollias](https://sites.google.com/view/dimitrioskollias).
+I am a [**HIIT Postdoctoral Fellow**](https://www.hiit.fi/current-fellows) at **Aalto University** and am also affiliated with [**ELLIS Institute Finland**](https://www.ellisinstitute.fi/), working with Prof. [Guoying Zhao](https://gyzhao-nm.github.io/Guoying/) and Prof. [Juho Kannala](https://users.aalto.fi/~kannalj1/). I received my **Ph.D. from Xi’an Jiaotong University**, supervised by Prof. [Xinyu Yang](https://gr.xjtu.edu.cn/xyyang/en/index.htm). Previously, I spent three years at **Queen Mary University of London**, where I worked as a **Research Associate** with Prof. [Dimitrios Kollias](https://sites.google.com/view/dimitrioskollias).
 
 My research examines **the mechanisms and limits of AI’s understanding of human affect and behaviour**. I investigate how psychological theories can inform learned representations, how those representations shape model judgements, and why the resulting errors and biases vary across people and contexts. This analysis guides my development of **interpretable and fair learning methods**, linking **psychological theory with mathematical optimisation**. My long-term goal is to advance **human-centred and trustworthy AI** that can reliably understand human behaviour across diverse social contexts.
 
@@ -87,7 +87,7 @@ My research examines **the mechanisms and limits of AI’s understanding of huma
 
 <div class="news-list" markdown="1">
 
-- <time datetime="2026-10">2026.10:</time> <span class="news-body" markdown="span">🌱 Joined **Aalto University** as a **[HIIT Postdoctoral Fellow](https://www.hiit.fi/)** with an affiliation at **[ELLIS Institute Finland](https://www.ellisinstitute.fi/)**.
+- <time datetime="2026-10">2026.10:</time> <span class="news-body" markdown="span">🌱 Joined **Aalto University** as a **[HIIT Postdoctoral Fellow](https://www.hiit.fi/current-fellows)** with an affiliation at **[ELLIS Institute Finland](https://www.ellisinstitute.fi/)**.
 </span>
 - <time datetime="2026-10">2026.10:</time> <span class="news-body" markdown="span">🏆 Recognised as a <strong class="achievement-highlight">Top Reviewer</strong> for **NeurIPS 2026**.
 </span>
@@ -107,9 +107,9 @@ My research examines **the mechanisms and limits of AI’s understanding of huma
 </span>
 - <time datetime="2026-05">2026.05:</time> <span class="news-body" markdown="span">🏅 Recognised as a <strong class="achievement-highlight">Silver Reviewer</strong> for **[ICML 2026](https://icml.cc/Conferences/2026/ProgramCommittee#silver)**.
 </span>
-- <time datetime="2026-05">2026.05:</time> <span class="news-body" markdown="span">🎉 Selected for the **[HIIT Postdoctoral Fellowship](https://www.hiit.fi/current-fellows)**, a <strong class="achievement-highlight">three-year, fully funded fellowship</strong> at **Aalto University** (acceptance rate: <strong class="achievement-highlight news-rate" title="2025 joint recruitment calls: 12 offers from 491 applications">2.44%</strong>).
+- <time datetime="2026-05">2026.05:</time> <span class="news-body" markdown="span">🎉 Awarded a <strong class="achievement-highlight">three-year, fully funded</strong> **[HIIT Postdoctoral Fellowship](https://www.hiit.fi/current-fellows)** at **Aalto University**, working with Prof. [Guoying Zhao](https://gyzhao-nm.github.io/Guoying/) and Prof. [Juho Kannala](https://users.aalto.fi/~kannalj1/) (success rate: ≈ <strong class="achievement-highlight news-rate" title="Reference: 2025 HIIT Fellow and PI Postdoctoral joint recruitment; 12 offers from 491 applications. This is not a separately verified rate for the 2026 HIIT Fellowship cohort.">2.44%</strong>).
 </span>
-- <time datetime="2026-04">2026.04:</time> <span class="news-body" markdown="span">📢 Invited to the **[HIIT Special Seminar series](https://www.hiit.fi/guanyu-hu-advancing-affective-computing-from-robust-perception-to-interpretable-and-fair-reasoning)** to speak on “<em class="news-title">Advancing Affective Computing from Robust Perception to Interpretable and Fair Reasoning</em>”.
+- <time datetime="2026-04">2026.04:</time> <span class="news-body" markdown="span">📢 **Invited talk** at the **[HIIT Special Seminar series](https://www.hiit.fi/guanyu-hu-advancing-affective-computing-from-robust-perception-to-interpretable-and-fair-reasoning)**: “<em class="news-title">Advancing Affective Computing from Robust Perception to Interpretable and Fair Reasoning</em>”.
 </span>
 - <time datetime="2025-11">2025.11:</time> <span class="news-body" markdown="span">🎉 One paper accepted at **AAAI 2026**: **[Fair Domain Generalization](https://ojs.aaai.org/index.php/AAAI/article/view/39508)** · <strong class="achievement-highlight">Oral</strong> (acceptance rate: <strong class="achievement-highlight news-rate">17.5%</strong>).
 </span>
