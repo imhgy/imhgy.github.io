@@ -10,7 +10,7 @@ redirect_from:
 
 <h1 id="Hello" style="margin-top: 1rem">👋 Hi!</h1>
 
-I am a [**HIIT Postdoctoral Fellow**](https://www.hiit.fi/current-fellows) at **Aalto University** and am also affiliated with [**ELLIS Institute Finland**](https://www.ellisinstitute.fi/), working with Prof. [Guoying Zhao](https://gyzhao-nm.github.io/Guoying/) and Prof. [Juho Kannala](https://users.aalto.fi/~kannalj1/). I received my **Ph.D. from Xi’an Jiaotong University**, supervised by Prof. [Xinyu Yang](https://gr.xjtu.edu.cn/xyyang/en/index.htm). Previously, I spent three years at **Queen Mary University of London**, where I worked as a **Research Associate** with Prof. [Dimitrios Kollias](https://sites.google.com/view/dimitrioskollias).
+I am a [**HIIT Postdoctoral Fellow**](https://www.hiit.fi/current-fellows/guanyu-hu) at **Aalto University** and am also affiliated with [**ELLIS Institute Finland**](https://www.ellisinstitute.fi/), working with Prof. [Guoying Zhao](https://gyzhao-nm.github.io/Guoying/) and Prof. [Juho Kannala](https://users.aalto.fi/~kannalj1/). I received my **Ph.D. from Xi’an Jiaotong University**, supervised by Prof. [Xinyu Yang](https://gr.xjtu.edu.cn/xyyang/en/index.htm). Previously, I spent three years at **Queen Mary University of London**, where I worked as a **Research Associate** with Prof. [Dimitrios Kollias](https://sites.google.com/view/dimitrioskollias).
 
 My research examines **the mechanisms and limits of AI’s understanding of human affect and behaviour**. I investigate how psychological theories can inform learned representations, how those representations shape model judgements, and why the resulting errors and biases vary across people and contexts. This analysis guides my development of **interpretable and fair learning methods**, linking **psychological theory with mathematical optimisation**. My long-term goal is to advance **human-centred and trustworthy AI** that can reliably understand human behaviour across diverse social contexts.
 
@@ -87,7 +87,7 @@ My research examines **the mechanisms and limits of AI’s understanding of huma
 
 <div class="news-list" markdown="1">
 
-- <time datetime="2026-10">2026.10:</time> <span class="news-body" markdown="span">🌱 Joined **Aalto University** as a **[HIIT Postdoctoral Fellow](https://www.hiit.fi/current-fellows)** with an affiliation at **[ELLIS Institute Finland](https://www.ellisinstitute.fi/)**.
+- <time datetime="2026-10">2026.10:</time> <span class="news-body" markdown="span">🌱 Joined **Aalto University** as a **[HIIT Postdoctoral Fellow](https://www.hiit.fi/current-fellows/guanyu-hu)** with an affiliation at **[ELLIS Institute Finland](https://www.ellisinstitute.fi/)**.
 </span>
 - <time datetime="2026-10">2026.10:</time> <span class="news-body" markdown="span">🏆 Recognised as a <strong class="achievement-highlight">Top Reviewer</strong> for **NeurIPS 2026**.
 </span>
